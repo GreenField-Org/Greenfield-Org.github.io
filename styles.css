@@ -39,8 +39,13 @@
     color: #5E8932;
   }
 
+  .floatright{
+      float: right;
+  }
   /*home page grid */
   .container {  display: grid;
+    justify-content: center;
+    align-content: center;
     font-family: arial;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -51,6 +56,12 @@
   
   .Photo { 
       grid-area: Photo;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .homeimage{
+        height: 600px;
     }
   
   .Text { grid-area: Text;
@@ -61,6 +72,7 @@
     .Text h1{
         font-size: 25px;
     }
+
   
     /* media queries for tablet*/
     @media screen and (min-width: 768px) and (max-width: 991px) {
