@@ -41,12 +41,12 @@
 
   /*home page grid */
   .container {  display: grid;
+    font-family: arial;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
-    grid-auto-flow: row;
     grid-template-areas:
-      "Photo Text ."
+      "Photo Text Text"
   }
   
   .Photo { 
@@ -54,8 +54,12 @@
     }
   
   .Text { grid-area: Text;
-    width: 60%;
     align-items:center;
+    text-align: center;
+    }
+    
+    .Text h1{
+        font-size: 25px;
     }
   
     /* media queries for tablet*/
