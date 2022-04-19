@@ -47,10 +47,6 @@
     grid-auto-flow: row;
     grid-template-areas:
       "Photo Text ."
-      ". . ."
-      ". . .";
-    margin: auto;
-    text-align: center;
   }
   
   .Photo { 
@@ -58,6 +54,15 @@
     }
   
   .Text { grid-area: Text;
-
+    width: 60%;
+    align-items:center;
     }
   
+    /* media queries for tablet*/
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+    }
+
+    /*media querie for phone*/
+    @media screen and (max-width: 767px) {
+
+    }
