@@ -1,3 +1,7 @@
+body{
+    font-family: 'open sans';
+}
+
 .logo{
     height: 40px;
     margin-top: 20px;
@@ -8,7 +12,7 @@
     height: 100px;
     background-color: #fff;
     overflow: hidden;
-    font-family: 'arial';
+    font-family: 'open sans';
   }
   
   /* Style the links inside the navigation bar */
