@@ -1,3 +1,16 @@
+.footer{
+    background-color: #5E8932;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-family: 'open sans';
+    color:#fff;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+}
+
 .logo{
     height: 40px;
     margin-top: 20px;
