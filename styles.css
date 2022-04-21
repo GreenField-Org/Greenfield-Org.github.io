@@ -87,8 +87,8 @@ body{
     justify-content: center;
     align-content: center;
     font-family: arial;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: 1fr auto auto;
     gap: 0px 0px;
     grid-template-areas:
       "Photo Text Text"
