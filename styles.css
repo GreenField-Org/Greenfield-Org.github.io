@@ -2,6 +2,24 @@ body{
     font-family: 'open sans';
 }
 
+.devpage {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "webdev webdev webdev"
+      "webapp webapp webapp"
+      "mobiledev mobiledev mobiledev";
+  }
+  
+  .webdev { grid-area: webdev; }
+  
+  .webapp { grid-area: webapp; }
+  
+  .mobiledev { grid-area: mobiledev; }
+  
+
 .footer{
     background-color: #5E8932;
     text-align: center;
