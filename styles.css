@@ -110,6 +110,11 @@ body{
     .homeimage{
         height: 600px;
     }
+
+    .teamplant{
+        height: 500px;
+        margin-bottom: -100px;
+    }
   
     .teamtop{
         text-align: center;
