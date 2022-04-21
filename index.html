@@ -15,11 +15,13 @@
     <body>
         <header>
             <div class="navbar">
-                <img class="logo" src="./img/logo.PNG" alt="greenfield org logo">
+                <a href="#home"><img class="logo" src="./img/logo.PNG" alt="greenfield org logo"></a>
+                <div class="floatright">
                     <a class="active" href="#home">Home</a>
                     <a href="#projects">Projects</a>
                     <a href="#team">Team</a>
                     <a href="#contact">Contact</a>
+                </div>
             </div>
         </header>
 
@@ -34,10 +36,31 @@
                 <div class="photo3"></div>
               </div>
         </div>
+
+        <div class="container" id="home">
+            <div class="Photo">
+                <img class="homeimage" src="img/homepage.PNG">
+            </div>
+            <div class="Text">
+                <h1>Building software solutions to fit your needs</h1>
+                <p>We are a team of Software Engineers and Web Developers who will work with you to solve your companies needs regardless of the technology.</p>
+                <button class="button" href="#contact">Contact us for a quote</button>
+            </div>
+          </div>
+          <div id="contact">
+            <div>
+                <button class="contactbtn" href="#">Contact Us</button>
+                <div class="contactimg">
+                    <img src="./img/coffee.svg">
+                    <img src="/img/pplsitting.svg">
+                </div>
+            </div>
+          </div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+        <!-- footer -->
+        <footer class="footer">Made with ❤ by Greenfield Development - Copyright &copy; <script>document.write(new Date().getFullYear())</script></footer>
         <script src="" async defer></script>
     </body>
 </html>
