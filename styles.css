@@ -67,7 +67,7 @@ body{
     align-content: center;
     font-family: arial;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     gap: 0px 0px;
     grid-template-areas:
       "Photo Text Text"
@@ -80,9 +80,14 @@ body{
     }
     .smplant{
         height: 100px;
-        margin-left: 60vw;
+        margin-left: 40vw;
         margin-top: -70px;
+    }
 
+    .svgcont{
+        background: url(./img/dangreen.svg);
+        width: 422px;
+        height: 365px;
     }
     .homeimage{
         height: 600px;
@@ -111,13 +116,19 @@ body{
           ". . .";
       }
       
-      .Dan { grid-area: Dan; }
+      .Dan { 
+        grid-area: Dan;
+        text-align: center; }
       
-      .Hanna { grid-area: Hanna; }
+      .Hanna { 
+          grid-area: Hanna; 
+          text-align: center;
+        }
       
       .The-Team { 
           grid-area: The-Team; 
           text-align: center;
+          height: 100px;
         }
       
   
