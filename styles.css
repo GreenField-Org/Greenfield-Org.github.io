@@ -100,6 +100,26 @@ body{
         font-size: 25px;
     }
 
+    .aboutpg {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "The-Team The-Team The-Team"
+          "Dan . Hanna"
+          ". . .";
+      }
+      
+      .Dan { grid-area: Dan; }
+      
+      .Hanna { grid-area: Hanna; }
+      
+      .The-Team { 
+          grid-area: The-Team; 
+          text-align: center;
+        }
+      
   
     /* media queries for tablet*/
     @media screen and (min-width: 768px) and (max-width: 991px) {
