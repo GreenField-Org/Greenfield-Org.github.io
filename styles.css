@@ -84,10 +84,15 @@ body{
         margin-top: -70px;
     }
 
-    .svgcont{
+    .svgcontd{
         background: url(./img/dangreen.svg);
         width: 422px;
         height: 365px;
+    }
+    .svgconth{
+        background: url(./img/hannagreen.svg);
+        width: 445px;
+        height: 399px;
     }
     .homeimage{
         height: 600px;
