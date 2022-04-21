@@ -3,8 +3,8 @@ body{
 }
 
 .devpage {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -13,7 +13,8 @@ body{
       "mobiledev mobiledev mobiledev";
   }
   
-  .webdev { grid-area: webdev; }
+  .webdev { grid-area: webdev;
+ }
   
   .webapp { grid-area: webapp; }
   
@@ -115,10 +116,14 @@ body{
     }
 
     .webdevwords{
-        background: url(./img/webdevgreen.svg);
-        background-size: cover;
         height: 300px;
-        width: 250px;
+        width: 400px;  
+        margin-top: -300px;
+    }
+
+    .greenwebdev{
+        width: 300px;
+        margin-left: 300px;
     }
   
     /* media queries for tablet*/
