@@ -78,11 +78,19 @@ body{
       justify-content: center;
       align-content: center;
     }
+    .smplant{
+        height: 100px;
+        margin-left: 60vw;
+        margin-top: -70px;
 
+    }
     .homeimage{
         height: 600px;
     }
   
+    .teamtop{
+        text-align: center;
+    }
   .Text { grid-area: Text;
     align-items:center;
     text-align: center;
