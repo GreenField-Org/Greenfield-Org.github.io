@@ -17,13 +17,13 @@ body{
   
   .devbot { 
       grid-area: devbot;
-      background: url(./img/botgreen.svg);
+      background-image: url(./img/botgreen.svg);
       background-size: cover;
     }
   
   .devtop { 
       grid-area: devtop; 
-      background: url(./img/topgreen.svg);
+      background-image: url(./img/topgreen.svg);
       background-size: cover;
     }
   
