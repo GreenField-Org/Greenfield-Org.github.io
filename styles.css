@@ -2,9 +2,30 @@ body{
     font-family: 'open sans';
 }
 
+.footer{
+    background-color: #5E8932;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-family: 'open sans';
+    color:#fff;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+}
+
 .logo{
     height: 40px;
     margin-top: 20px;
+}
+
+.button{
+    background-color: #5E8932;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.4));
 }
 
 /* Add a black background color to the top navigation */
@@ -21,7 +42,7 @@ body{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
   }
   
   /* Change the color of links on hover */
@@ -35,3 +56,48 @@ body{
     color: #5E8932;
   }
 
+  .floatright{
+      float: right;
+      margin-top: 25px;
+      margin-right: 20px;
+  }
+  /*home page grid */
+  .container {  display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: arial;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Photo Text Text"
+  }
+  
+  .Photo { 
+      grid-area: Photo;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .homeimage{
+        height: 600px;
+    }
+  
+  .Text { grid-area: Text;
+    align-items:center;
+    text-align: center;
+    }
+    
+    .Text h1{
+        font-size: 25px;
+    }
+
+  
+    /* media queries for tablet*/
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+    }
+
+    /*media querie for phone*/
+    @media screen and (max-width: 767px) {
+
+    }
