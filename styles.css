@@ -4,7 +4,7 @@ body{
 
 .devpage {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 320px 1fr 1fr 1fr 320px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -18,13 +18,13 @@ body{
   .devbot { 
       grid-area: devbot;
       background: url(./img/botgreen.svg);
-      background-size: contain;
+      background-size: cover;
     }
   
   .devtop { 
       grid-area: devtop; 
       background: url(./img/topgreen.svg);
-      background-size: contain;
+      background-size: cover;
     }
   
   .webdev { grid-area: webdev; }
