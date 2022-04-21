@@ -132,7 +132,7 @@ body{
         margin-left: 200px;
     }
 
-    .webdevwords h2{
+    .devpage h2{
         text-align: center;
     }
 
@@ -144,6 +144,18 @@ body{
     .greenwebdev{
         width: 300px;
         margin-left: 300px;
+    }
+
+    .greenwebapp{
+        float: right;
+        margin-top: 150px;
+        margin-right: 100px;
+    }
+
+    .webappwords{
+        margin-top: -400px;
+        width: 300px;
+        margin-left: 1400px;
     }
   
     /* media queries for tablet*/
