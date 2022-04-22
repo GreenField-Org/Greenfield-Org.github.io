@@ -24,7 +24,8 @@ body{
   .devtop { 
       grid-area: devtop; 
       background-image: url(./img/topgreen.svg);
-      background-size: cover;
+      height: 100px;
+      background-position: 50% 50%;
     }
   
   .webdev { grid-area: webdev; }
