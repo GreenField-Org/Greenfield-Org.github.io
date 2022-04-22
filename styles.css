@@ -14,6 +14,10 @@ body{
 .emptydesk{
     margin-left: 25vw;
 }
+#contact{
+    background-color: #b0c49c;
+    height: 100vh;
+}
 
 .footer{
     background-color: #5E8932;
@@ -41,6 +45,22 @@ body{
     filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.4));
 }
 
+.contactbtn{
+    background-color: #5E8932;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    width: 477px;
+    height: 88px;
+    filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.4));
+    font-size: 40px;
+    margin-top: 300px;
+    margin-left: 250px;
+}
+.contactimg{
+    float: right;
+    margin-top: 300px;
+}
 /* Add a black background color to the top navigation */
 .navbar {
     height: 100px;
@@ -69,6 +89,29 @@ body{
     color: #5E8932;
   }
 
+  .aboutpg {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "webdev webdev photo1"
+      "photo2 webapp webapp"
+      "mobiledev mobiledev photo3";
+  }
+  
+  .webdev { grid-area: webdev; }
+  
+  .photo1 { grid-area: photo1; }
+  
+  .photo2 { grid-area: photo2; }
+  
+  .webapp { grid-area: webapp; }
+  
+  .mobiledev { grid-area: mobiledev; }
+  
+  .photo3 { grid-area: photo3; }
+  
   .floatright{
       float: right;
       margin-top: 25px;
@@ -81,6 +124,8 @@ body{
     font-family: arial;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: 1fr auto auto;
     gap: 0px 0px;
     grid-template-areas:
       "Photo Text Text"
