@@ -143,7 +143,7 @@ body{
     .smplant{
         height: 100px;
         margin-left: 40vw;
-        margin-top: -70px;
+        margin-top: -90px;
     }
 
     .svgcontd{
@@ -168,6 +168,7 @@ body{
     .teamtop{
         text-align: center;
     }
+    
   .Text { grid-area: Text;
     align-items:center;
     text-align: center;
