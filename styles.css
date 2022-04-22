@@ -168,7 +168,7 @@ body{
     .teamtop{
         text-align: center;
     }
-    
+
   .Text { grid-area: Text;
     align-items:center;
     text-align: center;
@@ -195,11 +195,13 @@ body{
       
       .Dan { 
         grid-area: Dan;
-        text-align: center; }
+        text-align: center;
+    justify-self: end; }
       
       .Hanna { 
           grid-area: Hanna; 
           text-align: center;
+          justify-self: start;
         }
       
       .The-Team { 
