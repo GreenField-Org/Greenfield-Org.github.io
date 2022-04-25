@@ -28,7 +28,7 @@ body{
     font-family: 'open sans';
     color:#fff;
     font-weight: bold;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 
@@ -122,6 +122,9 @@ body{
       height: 100vh;
   }
   /*home page grid */
+  #home{
+      height: 100vh;
+  }
   .container {  display: grid;
     justify-content: center;
     align-content: center;
