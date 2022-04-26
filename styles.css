@@ -21,8 +21,7 @@ body{
   
   .devbot { 
       grid-area: devbot;
-      background-image: url(./img/botgreen.svg);
-      background-size: cover;
+      height: 100px;
     }
   
   .devtop { 
@@ -31,7 +30,8 @@ body{
     }
 
   
-  .webdev { grid-area: webdev; }
+  .webdev { grid-area: webdev; 
+    width: 100vw;}
   
   .webapp { grid-area: webapp; }
   
@@ -137,7 +137,9 @@ body{
   
   .webdev { grid-area: webdev; }
   
-  .photo1 { grid-area: photo1; }
+  .photo1 { grid-area: photo1; 
+    justify-self: end;
+}
   
   .photo2 { grid-area: photo2; }
   
@@ -165,9 +167,9 @@ body{
     align-content: center;
     font-family: arial;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 1fr auto auto;
-    grid-template-rows: 1fr auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
       "Photo Text Text"
@@ -228,13 +230,16 @@ body{
     }
 
     .webdevimg{
-        height: 400px;
         float: right;
+        margin-top: -340px;
+        padding-right: 300px;
+        height: 500px;
     }
 
     .greenwebdev{
         width: 300px;
         margin-left: 300px;
+        justify-self: start;
     }
 
     .greenwebapp{
