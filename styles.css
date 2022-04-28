@@ -238,6 +238,7 @@ body{
 
     .webappwords{
         width: 300px;
+        margin-top: -250px;
     }
     #team{
         height: 100vh;
