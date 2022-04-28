@@ -16,6 +16,7 @@ body{
     gap: 0px 0px;
     grid-auto-flow: row;
     font-family: 'arial';
+    align-items: center;
   }
 
   .devpage p{
@@ -213,7 +214,13 @@ body{
 
     .mobilewords{
         width: 300px;
-        margin-top: -220px;
+        margin-top: -250px;
+        line-height: 25px;
+        margin-left: 150px;
+    }
+
+    .mobilegreen{
+        margin-left: 200px;
     }
 
     .devpage h2{
@@ -239,6 +246,7 @@ body{
     .webappwords{
         width: 300px;
         margin-top: -250px;
+        line-height: 25px;
     }
     #team{
         height: 100vh;
