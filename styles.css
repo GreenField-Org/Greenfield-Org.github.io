@@ -175,6 +175,7 @@ body{
   .Text { grid-area: Text;
     align-items:center;
     text-align: center;
+    margin-top: 25vh;
     }
     
     .Text h1{
