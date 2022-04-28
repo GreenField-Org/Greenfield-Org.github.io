@@ -11,35 +11,27 @@ body{
 }
 
 .devpage {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 320px 1fr 1fr 1fr 320px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "devtop devtop devtop"
-      "webdev webdev webdev"
-      "webapp webapp webapp"
-      "mobile mobile mobile"
-      "devbot devbot devbot";
+      "devtop devtop devtop devtop"
+      "webdev webdev webdev webdev"
+      "webapp webapp webapp webapp"
+      "mobiledev mobiledev mobiledev mobiledev"
+      "devbot devbot devbot devbot";
   }
   
-  .devbot { 
-      grid-area: devbot;
-      height: 100px;
-    }
+  .devtop { grid-area: devtop; }
   
-  .devtop { 
-      grid-area: devtop; 
-      height: 100px;
-    }
-
+  .devbot { grid-area: devbot; }
   
-  .webdev { grid-area: webdev; 
-    width: 100vw;}
+  .webdev { grid-area: webdev; }
   
   .webapp { grid-area: webapp; }
   
-  .mobile { grid-area: mobile; }
+  .mobiledev { grid-area: mobiledev; }
   
 .aboutbtn{
     background-color: #5E8932;
