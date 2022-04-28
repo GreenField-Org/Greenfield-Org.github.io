@@ -211,11 +211,16 @@ body{
         line-height: 25px;
     }
 
+    .mobilewords{
+        width: 300px;
+        margin-top: -220px;
+    }
+
     .devpage h2{
         text-align: center;
     }
 
-    .webdevimg{
+    .devimg{
         height: 500px;
     }
 
@@ -232,9 +237,7 @@ body{
     }
 
     .webappwords{
-        margin-top: -400px;
         width: 300px;
-        margin-left: 1400px;
     }
     #team{
         height: 100vh;
