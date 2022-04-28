@@ -121,30 +121,6 @@ body{
     color: #5E8932;
   }
 
-  .aboutpg {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "webdev webdev photo1"
-      "photo2 webapp webapp"
-      "mobiledev mobiledev photo3";
-  }
-  
-  .webdev { grid-area: webdev; }
-  
-  .photo1 { grid-area: photo1; 
-    justify-self: end;
-}
-  
-  .photo2 { grid-area: photo2; }
-  
-  .webapp { grid-area: webapp; }
-  
-  .mobiledev { grid-area: mobiledev; }
-  
-  .photo3 { grid-area: photo3; }
   
   .floatright{
       float: right;
