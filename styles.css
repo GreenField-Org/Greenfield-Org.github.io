@@ -36,15 +36,25 @@ body{
     height: 10vh;
 }
   
-  .webphoto { grid-area: 2 / 3 / 3 / 5; }
+  .webphoto { grid-area: 2 / 3 / 3 / 5; 
+justify-self: center;}
   
-  .appphoto { grid-area: 3 / 1 / 4 / 3; }
+  .appphoto { grid-area: 3 / 1 / 4 / 3;
+    justify-self: end;
+
+}
   
-  .webapp { grid-area: 3 / 3 / 4 / 5; }
+  .webapp { grid-area: 3 / 3 / 4 / 5;
+    justify-self: center;
+}
   
-  .mobiledev { grid-area: 4 / 1 / 5 / 3; }
+  .mobiledev { grid-area: 4 / 1 / 5 / 3;
+    justify-self: center;
+}
   
-  .mobilephoto { grid-area: 4 / 3 / 5 / 5; }
+  .mobilephoto { grid-area: 4 / 3 / 5 / 5;
+    justify-self: center;
+}
   
   
 .aboutbtn{
