@@ -306,3 +306,144 @@ justify-self: center;}
     @media screen and (max-width: 767px) {
 
     }
+
+    @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+
+.container {
+  height: 100%;
+  color: white;
+  overflow: hidden;
+}
+.half {
+  color: white;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-container {
+  position: relative;
+  padding: 20px;
+  top: 50%;
+  transform: translateY(-80%);
+  transition: 1s all;
+  text-align: center;
+  &.is-active {
+    transform: translateY(-50%);
+    transition-delay: 1s;
+  }
+}
+
+.cta-container {
+  background-color: #5E8932;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30vh;
+  transition: 1s all;
+  overflow: hidden;
+  border-radius: 8px;
+  &:before {
+    content: "";
+    position: absolute;
+    background: #5E8932;
+    width: 150%;
+    height: 100%;
+    left: -50%;
+    bottom: -50%;
+    transform: rotate(25deg);
+    display: block;
+  }
+  .cta-text {
+     text-align: center;
+     position: relative;
+     top: 50%;
+     transform: translateY(-50%);
+     transition: 1s all;
+  }
+}
+.cta-container.is-active {
+  height: 100vh;
+  .cta-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 45%;
+    transform: translateY(-200%);
+    transition-delay: 1s;
+  }
+  .form-container {
+    opacity: 1;
+    label,.submit {
+      opacity: 1;
+    }
+    label:nth-of-type(1) {
+      transition-delay: 1.8s;
+    }
+    label:nth-of-type(2) {
+      transition-delay: 2.0s;
+    }
+    label:nth-of-type(3) {
+      transition-delay: 2.2s;
+    }
+        label:nth-of-type(4) {
+      transition-delay: 2.4s;
+    }
+    .submit {
+      transition-delay: 2.6s;
+    }
+  }
+  .arrow {
+    opacity: 0;
+  }
+}
+.arrow {
+  transition: .4s all;
+  cursor: pointer;
+  transform-origin: center;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  &:hover {
+    transform: rotate(90deg) scale(1.3);
+  }
+}
+.arrow svg path {
+  fill: #0D735D;
+}
+.form-container {
+  opacity: 0;
+  padding: 20px;
+  position: absolute;
+  transition: .3s all 1s;
+  text-align: left;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+input[type='text'] {
+  width: 100%;
+  background: #b0c49c;
+  border: 1px solid black;
+  padding: 7px;
+  outline: none;
+}
+input[type="submit"] {
+  background: #0D735D;
+  color: white;
+  margin: auto;
+  padding: 15px;
+  border: none;
+  display: block;
+  font-size: 18px;
+  width: 180px;
+}
+label,.submit {
+  opacity: 0;
+  transition: .5s all;
+  display: block;
+  margin-bottom: 20px;
+}
