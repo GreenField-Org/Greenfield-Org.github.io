@@ -105,17 +105,26 @@
         </div>
           <div id="contact">
             <div>
-                <button class="contactbtn" href="#">Contact Us</button>
+                <a role="button" class="contactbtn" href="#">Contact Us</a>
+                    <div class="contactform">
+                        <form action="mailto:development.gf@gmail.com">
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name"><br>
+                            <label for="email">Email</label><br>
+                            <input type="text" id="email" name="email"><br>
+                            <label for="Title">Title</label><br>
+                            <input type="text" id="title" name="title"><br>
+                            <label for="message">Message</label><br>
+                            <input type="text" id="message" name="message"><br>
+                            <button type="submit" value="Submit">Send</button>
+                        </form>
+                    </div>
                 <div class="contactimg">
                     <img src="./img/coffee.svg">
                     <img src="/img/pplsitting.svg">
                 </div>
             </div>
           </div>
-          <script>$('.contactbtn').click(function(){
-            $('contactbtn').toggleClass('is-active');
-          });</script>
-
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
