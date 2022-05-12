@@ -109,18 +109,32 @@ justify-self: center;}
     height: 88px;
     filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.4));
     font-size: 40px;
-    margin-top: 300px;
+    margin-top: 500px;
     margin-left: 250px;
+    text-decoration: none;
 }
 
-.contactbtn:active{
+.contactform{
     background-color: #5E8932;
-    height: 50vh;
+    width: 500px;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: arial;
+    color: white;
+    transition-delay: 1s;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.contactbtn:hover{
+    display: none;
 }
 .contactimg{
     float: right;
     margin-top: 300px;
 }
+
+
 /* Add a black background color to the top navigation */
 .navbar {
     height: 100px;
