@@ -74,6 +74,7 @@ justify-self: center;}
 #contact{
     background-color: #b0c49c;
     height: 100vh;
+    text-align: center;
 }
 
 .footer{
@@ -111,13 +112,53 @@ justify-self: center;}
     height: 88px;
     filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.4));
     font-size: 40px;
-    margin-top: 300px;
+    margin-top: 500px;
     margin-left: 250px;
+    text-decoration: none;
+}
+
+.contactform{
+    background-color: #5E8932;
+    width: 500px;
+    height: 370px;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: arial;
+    color: white;
+    transition-delay: 1s;
+    margin-left: 200px;
+    text-align: center;
+}
+
+input{
+    width: 300px;
+    background-color: #b0c49c;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.submit{
+    background-color: #b0c49c;
+    height: 30px;
+    border-radius: 8px;
+    width: 150px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+#message{
+    height: 150px;
+}
+
+.contactbtn:hover{
+    display: none;
 }
 .contactimg{
     float: right;
-    margin-top: 300px;
+    margin-top: -100px;
 }
+
+
 /* Add a black background color to the top navigation */
 .navbar {
     height: 100px;
