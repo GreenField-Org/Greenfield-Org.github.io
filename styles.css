@@ -148,6 +148,7 @@ input{
 
 #message{
     height: 150px;
+    resize: none;
 }
 
 .contactbtn:hover{
