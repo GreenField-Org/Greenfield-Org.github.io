@@ -72,6 +72,7 @@ justify-self: center;}
 #contact{
     background-color: #b0c49c;
     height: 100vh;
+    text-align: center;
 }
 
 .footer{
@@ -117,7 +118,7 @@ justify-self: center;}
 .contactform{
     background-color: #5E8932;
     width: 500px;
-    height: 320px;
+    height: 370px;
     border-radius: 8px;
     padding: 10px;
     font-family: arial;
@@ -126,13 +127,12 @@ justify-self: center;}
     margin-left: 200px;
     text-align: center;
 }
-label{
-    text-align: left;
-}
+
 input{
     width: 300px;
     background-color: #b0c49c;
     border: 1px solid black;
+    margin: 5px;
 }
 
 .submit{
@@ -153,7 +153,7 @@ input{
 }
 .contactimg{
     float: right;
-    margin-top: 190;
+    margin-top: -100px;
 }
 
 
