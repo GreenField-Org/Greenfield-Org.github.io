@@ -117,13 +117,35 @@ justify-self: center;}
 .contactform{
     background-color: #5E8932;
     width: 500px;
+    height: 320px;
     border-radius: 8px;
     padding: 10px;
     font-family: arial;
     color: white;
     transition-delay: 1s;
-    margin-left: 100px;
+    margin-left: 200px;
     text-align: center;
+}
+label{
+    text-align: left;
+}
+input{
+    width: 300px;
+    background-color: #b0c49c;
+    border: 1px solid black;
+}
+
+.submit{
+    background-color: #b0c49c;
+    height: 30px;
+    border-radius: 8px;
+    width: 150px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+#message{
+    height: 150px;
 }
 
 .contactbtn:hover{
@@ -131,7 +153,7 @@ justify-self: center;}
 }
 .contactimg{
     float: right;
-    margin-top: 300px;
+    margin-top: 190;
 }
 
 
