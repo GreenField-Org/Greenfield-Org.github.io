@@ -69,6 +69,8 @@ justify-self: center;}
     filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.4));
     width: 250px;
     font-family: arial;
+    cursor: pointer;
+    font-size: 15px;
 }
 
 .emptydesk{
