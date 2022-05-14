@@ -1,5 +1,6 @@
 body{
     font-family: 'open sans';
+    width: 100vw;
 }
 
 
@@ -29,12 +30,14 @@ body{
   }
 
   
-  .devbot { grid-area: 5 / 1 / 6 / 5; }
+  .devbot { grid-area: 5 / 1 / 6 / 5; 
+width: 100vw;}
   
   .webdev { grid-area: 2 / 1 / 3 / 5; }
   
   .devtop { grid-area: 1 / 1 / 2 / 5; 
     height: 10vh;
+    width: 100vw;
 }
   
   .webphoto { grid-area: 2 / 3 / 3 / 5; 
@@ -75,6 +78,7 @@ justify-self: center;}
     background-color: #b0c49c;
     height: 100vh;
     text-align: center;
+    width: 100vw;
 }
 
 .footer{
@@ -82,7 +86,7 @@ justify-self: center;}
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 100%;
+    width: 100vw;
     font-family: 'open sans';
     color:#fff;
     font-weight: bold;
