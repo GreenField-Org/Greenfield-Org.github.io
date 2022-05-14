@@ -1,0 +1,22 @@
+{
+  "name": "greenfield",
+  "version": "1.0.0",
+  "description": "Greenfield Org Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreenField-Org/GreenField.git"
+  },
+  "author": "Greenfield Development",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GreenField-Org/GreenField/issues"
+  },
+  "homepage": "https://github.com/GreenField-Org/GreenField#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
