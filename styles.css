@@ -75,6 +75,7 @@ justify-self: center;}
     background-color: #b0c49c;
     height: 100vh;
     text-align: center;
+    width: 100vw;
 }
 
 .footer{
@@ -82,7 +83,7 @@ justify-self: center;}
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 100%;
+    width: 100vw;
     font-family: 'open sans';
     color:#fff;
     font-weight: bold;
