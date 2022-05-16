@@ -390,6 +390,10 @@ input {
     animation: fade-left 1s ease-in;
   }
 
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+
   @keyframes fade-left {
     0% {
       transform: translateX(-100px);
@@ -401,6 +405,16 @@ input {
     }
   }
 
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
 
 /* media queries for tablet*/
