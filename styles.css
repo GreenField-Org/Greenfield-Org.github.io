@@ -375,6 +375,35 @@ input {
     margin-top: -100px;
 }
 
+/* project page grid */
+.projectpg {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "projtop projtop projtop"
+    "proj1 proj2 proj3"
+    "proj4 proj5 proj6"
+    "projbot projbot projbot";
+}
+
+.projtop { grid-area: projtop; }
+
+.proj1 { grid-area: proj1; }
+
+.proj2 { grid-area: proj2; }
+
+.proj3 { grid-area: proj3; }
+
+.proj4 { grid-area: proj4; }
+
+.proj5 { grid-area: proj5; }
+
+.proj6 { grid-area: proj6; }
+
+.projbot { grid-area: projbot; }
+
 
 
 /* media queries for tablet*/
