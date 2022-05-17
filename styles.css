@@ -396,7 +396,7 @@ input {
 
   @keyframes fade-left {
     0% {
-      transform: translateX(-100px);
+      transform: translateX(-300px);
       opacity: 0;
     }
     100% {
@@ -407,7 +407,7 @@ input {
 
   @keyframes fade-right {
     0% {
-      transform: translateX(100px);
+      transform: translateX(300px);
       opacity: 0;
     }
     100% {
