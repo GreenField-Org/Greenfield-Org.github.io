@@ -395,18 +395,38 @@ input {
 
 .projtop { 
     grid-area: projtop;
-    text-align: center; 
+    text-align: center;
+    height: 100px; 
 }
 
-.proj1 { grid-area: proj1; }
+.placeholder{
+    width: 300px;
+}
 
-.proj2 { grid-area: proj2; }
+.proj1 { 
+    grid-area: proj1;
+    justify-self: end;
 
-.proj3 { grid-area: proj3; }
+}
 
-.proj4 { grid-area: proj4; }
+.proj2 { 
+    grid-area: proj2;
+    justify-self: center;
+ }
 
-.proj5 { grid-area: proj5; }
+.proj3 { 
+    grid-area: proj3;   
+ }
+
+.proj4 { 
+    grid-area: proj4;
+    justify-self: end;
+ }
+
+.proj5 { 
+    grid-area: proj5;
+    justify-self: center;
+ }
 
 .proj6 { grid-area: proj6; }
 
