@@ -388,7 +388,7 @@ input {
 /* project page grid */
 .projectpg {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -406,20 +406,20 @@ input {
 
 .placeholder{
     width: 300px;
+    height: 300px;
 }
 .placeholder:hover{
     width: 500px;
     display: none;
 }
 
-.placeholder:hover +div{
+.placeholder:hover +.projinfo{
     display: block;
     background-color: #b0c49c;
-    opacity: 0.9;
-    transition: 0.3s;
 }
 
 .projinfo{
+    padding: 5px;
     text-align: center;
     display: none;
     font-family: arial;
