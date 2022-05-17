@@ -381,7 +381,8 @@ input {
 }
 
 .projppl{
-    height: 300px;
+    height: 400px;
+    margin-left: 130px;
 }
 
 /* project page grid */
@@ -433,7 +434,10 @@ input {
 
 .proj6 { grid-area: proj6; }
 
-.projbot { grid-area: projbot; }
+.projbot { 
+    grid-area: projbot;
+    margin-top: -80px;
+}
 
 
 
