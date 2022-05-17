@@ -375,6 +375,11 @@ input {
     margin-top: -100px;
 }
 
+.projects{
+    height: 100vh;
+    width: 100vw;
+}
+
 /* project page grid */
 .projectpg {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -388,7 +393,10 @@ input {
     "projbot projbot projbot";
 }
 
-.projtop { grid-area: projtop; }
+.projtop { 
+    grid-area: projtop;
+    text-align: center; 
+}
 
 .proj1 { grid-area: proj1; }
 
