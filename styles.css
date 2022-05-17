@@ -407,6 +407,28 @@ input {
 .placeholder{
     width: 300px;
 }
+.placeholder:hover{
+    width: 500px;
+    display: none;
+}
+
+.placeholder:hover +div{
+    display: block;
+    background-color: #b0c49c;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.projinfo{
+    text-align: center;
+    display: none;
+    font-family: arial;
+    width: 300px;
+    align-self: end;
+    color: black;
+    height: 300px;
+    margin-left: 200px;
+}
 
 .proj1 { 
     grid-area: proj1;
