@@ -380,6 +380,10 @@ input {
     width: 100vw;
 }
 
+.projppl{
+    height: 300px;
+}
+
 /* project page grid */
 .projectpg {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -406,7 +410,6 @@ input {
 .proj1 { 
     grid-area: proj1;
     justify-self: end;
-
 }
 
 .proj2 { 
