@@ -376,6 +376,46 @@ input {
 }
 
 
+/*animation on scroll*/
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-right {
+    0% {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
 
 /* media queries for tablet*/
 @media screen and (min-width: 768px) and (max-width: 991px) {}
