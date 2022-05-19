@@ -132,7 +132,7 @@
             <div>
                 <h1>Contact Us</h1>
                     <div class="contactform">
-                        <form action="mailto:development.gf@gmail.com">
+                        <form>
                             <label for="name">Name</label><br>
                             <input type="text" id="name" name="name"><br>
                             <label for="email">Email</label><br>
@@ -141,9 +141,17 @@
                             <input type="text" id="title" name="title"><br>
                             <label for="message">Message</label><br>
                             <input type="textarea" id="message" name="message"><br>
-                            <button class="submit" type="submit" value="Submit">Send</button>
+                            <a class="submit" type="submit" value="Submit"
+                            href = "mailto:development.gf@gmail.com?subject="subject""
+                            >Send</button>
                         </form>
                     </div>
+                    <script>
+                        function sendEmail(){
+                            let subject = document.getElementById('title');
+                            let message = doocment.getElementById('message')
+                        }
+                    </script>
                 <div class="contactimg">
                     <img src="./img/coffee.svg">
                     <img src="/img/pplsitting.svg">
