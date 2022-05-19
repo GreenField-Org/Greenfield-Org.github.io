@@ -1,99 +1,120 @@
-body{
+body {
     font-family: 'open sans';
-}
-
-.topgreen{
     width: 100vw;
 }
 
-.botgreen{
+
+.topgreen {
     width: 100vw;
 }
 
-.devpage {  display: grid;
+.botgreen {
+    width: 100vw;
+}
+
+.devpage {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     font-family: 'arial';
     align-items: center;
-  }
-
-  .devpage p{
-     text-align: left;
-  }
-
-  .devpage h{
-      text-align: center;
-  }
-
-  
-  .devbot { grid-area: 5 / 1 / 6 / 5; }
-  
-  .webdev { grid-area: 2 / 1 / 3 / 5; }
-  
-  .devtop { grid-area: 1 / 1 / 2 / 5; 
-    height: 10vh;
 }
-  
-  .webphoto { grid-area: 2 / 3 / 3 / 5; 
-justify-self: center;}
-  
-  .appphoto { grid-area: 3 / 1 / 4 / 3;
+
+.devpage p {
+    text-align: left;
+}
+
+.devpage h {
+    text-align: center;
+}
+
+
+.devbot {
+    grid-area: 5 / 1 / 6 / 5;
+    width: 100vw;
+}
+
+.webdev {
+    grid-area: 2 / 1 / 3 / 5;
+}
+
+.devtop {
+    grid-area: 1 / 1 / 2 / 5;
+    height: 10vh;
+    width: 100vw;
+}
+
+.webphoto {
+    grid-area: 2 / 3 / 3 / 5;
+    justify-self: center;
+}
+
+.appphoto {
+    grid-area: 3 / 1 / 4 / 3;
     justify-self: end;
 
 }
-  
-  .webapp { grid-area: 3 / 3 / 4 / 5;
+
+.webapp {
+    grid-area: 3 / 3 / 4 / 5;
     justify-self: center;
 }
-  
-  .mobiledev { grid-area: 4 / 1 / 5 / 3;
+
+.mobiledev {
+    grid-area: 4 / 1 / 5 / 3;
     justify-self: center;
 }
-  
-  .mobilephoto { grid-area: 4 / 3 / 5 / 5;
+
+.mobilephoto {
+    grid-area: 4 / 3 / 5 / 5;
     justify-self: center;
 }
-  
-  
-.aboutbtn{
+
+
+.aboutbtn {
     background-color: #5E8932;
     color: #fff;
     border-radius: 8px;
     padding: 15px;
     filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.4));
-    width: 200px;
+    width: 250px;
+    font-family: arial;
+    cursor: pointer;
+    font-size: 15px;
 }
 
-.emptydesk{
+.emptydesk {
     margin-left: 25vw;
 }
-#contact{
+
+#contact {
     background-color: #b0c49c;
     height: 100vh;
     text-align: center;
+    width: 100vw;
 }
 
-.footer{
+.footer {
     background-color: #5E8932;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 100%;
+    width: 100vw;
     font-family: 'open sans';
-    color:#fff;
+    color: #fff;
     font-weight: bold;
     position: fixed;
     bottom: 0;
 }
 
-.logo{
+.logo {
     height: 40px;
     margin-top: 20px;
 }
 
-.button{
+.button {
     background-color: #5E8932;
     color: #fff;
     border-radius: 8px;
@@ -101,7 +122,7 @@ justify-self: center;}
     filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.4));
 }
 
-.contactbtn{
+.contactbtn {
     background-color: #5E8932;
     color: #fff;
     border-radius: 8px;
@@ -115,7 +136,7 @@ justify-self: center;}
     text-decoration: none;
 }
 
-.contactform{
+.contactform {
     background-color: #5E8932;
     width: 500px;
     height: 370px;
@@ -128,14 +149,14 @@ justify-self: center;}
     text-align: center;
 }
 
-input{
+input {
     width: 300px;
     background-color: #b0c49c;
     border: 1px solid black;
     margin: 5px;
 }
 
-.submit{
+.submit {
     background-color: #b0c49c;
     height: 30px;
     border-radius: 8px;
@@ -144,18 +165,20 @@ input{
     border: 1px solid black;
 }
 
-#message{
+#message {
     height: 150px;
     background-color: #b0c49c;
     width: 300px;
     border: 1px solid black;
     font-family: arial;
+    resize: none;
 }
 
-.contactbtn:hover{
+.contactbtn:hover {
     display: none;
 }
-.contactimg{
+
+.contactimg {
     float: right;
     margin-top: -100px;
 }
@@ -167,43 +190,46 @@ input{
     background-color: #fff;
     overflow: hidden;
     font-family: 'open sans';
-  }
-  
-  /* Style the links inside the navigation bar */
-  .navbar a {
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
     color: #000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 20px;
-  }
-  
-  /* Change the color of links on hover */
-  .navbar a:hover {
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
     color: #5E8932;
-  }
-  
-  /* Add a color to the active/current link */
-  .navbar a.active {
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
     background-color: #fff;
     color: #5E8932;
-  }
+}
 
-  
-  .floatright{
-      float: right;
-      margin-top: 25px;
-      margin-right: 20px;
-  }
 
-  #home{
-      height: 100vh;
-  }
-  /*home page grid */
-  #home{
-      height: 100vh;
-  }
-  .container {  display: grid;
+.floatright {
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+
+#home {
+    height: 100vh;
+}
+
+/*home page grid */
+#home {
+    height: 100vh;
+}
+
+.container {
+    display: grid;
     justify-content: center;
     align-content: center;
     font-family: arial;
@@ -213,141 +239,190 @@ input{
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "Photo Text Text"
-  }
-  
-  .Photo { 
-      grid-area: Photo;
-      justify-content: center;
-      align-content: center;
-    }
-    .smplant{
-        height: 100px;
-        margin-left: 40vw;
-        margin-top: -90px;
-    }
+        "Photo Text Text"
+}
 
-    .svgcontd{
-        background: url(./img/dangreen.svg);
-        width: 422px;
-        height: 365px;
-    }
-    .svgconth{
-        background: url(./img/hannagreen.svg);
-        width: 445px;
-        height: 399px;
-    }
-    .homeimage{
-        height: 600px;
-    }
+.Photo {
+    grid-area: Photo;
+    justify-content: center;
+    align-content: center;
+}
 
-    .teamplant{
-        height: 500px;
-        margin-bottom: -100px;
-    }
-  
-    .teamtop{
-        text-align: center;
-    }
+.smplant {
+    height: 100px;
+    margin-left: 40vw;
+    margin-top: -90px;
+}
 
-  .Text { grid-area: Text;
-    align-items:center;
+.svgcontd {
+    background: url(./img/dangreen.svg);
+    width: 422px;
+    height: 365px;
+}
+
+.svgconth {
+    background: url(./img/hannagreen.svg);
+    width: 445px;
+    height: 399px;
+}
+
+.homeimage {
+    height: 600px;
+}
+
+.teamplant {
+    height: 500px;
+    margin-bottom: -100px;
+}
+
+.teamtop {
+    text-align: center;
+}
+
+.Text {
+    grid-area: Text;
+    align-items: center;
     text-align: center;
     margin-top: 25vh;
-    }
-    
-    .Text h1{
-        font-size: 25px;
-    }
+}
 
-    .webdevwords{
-        text-align: center;
-        width: 250px;
-        margin-top: -280px;
-        margin-left: 300px;
-        line-height: 25px;
-    }
+.Text h1 {
+    font-size: 25px;
+}
 
-    .mobilewords{
-        width: 300px;
-        margin-top: -250px;
-        line-height: 25px;
-        margin-left: 150px;
-    }
+.webdevwords {
+    text-align: center;
+    width: 250px;
+    margin-top: -280px;
+    margin-left: 300px;
+    line-height: 25px;
+}
 
-    .mobilegreen{
-        margin-left: 200px;
-    }
+.mobilewords {
+    width: 300px;
+    margin-top: -250px;
+    line-height: 25px;
+    margin-left: 150px;
+}
 
-    .devpage h2{
-        text-align: center;
-    }
+.mobilegreen {
+    margin-left: 200px;
+}
 
-    .devimg{
-        height: 500px;
-    }
+.devpage h2 {
+    text-align: center;
+}
 
-    .greenwebdev{
-        height: 400px;
-        margin-left: 400px;
-    }
+.devimg {
+    height: 500px;
+}
+
+.greenwebdev {
+    height: 400px;
+    margin-left: 400px;
+}
 
 
-    .greenwebapp{
-        float: right;
-        margin-top: 150px;
-        margin-right: 100px;
-    }
+.greenwebapp {
+    float: right;
+    margin-top: 150px;
+    margin-right: 100px;
+}
 
-    .webappwords{
-        width: 300px;
-        margin-top: -250px;
-        line-height: 25px;
-    }
-    #team{
-        height: 100vh;
-    }
+.webappwords {
+    width: 300px;
+    margin-top: -250px;
+    line-height: 25px;
+}
 
-    .aboutpg {  display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "The-Team The-Team The-Team"
-          "Dan . Hanna"
-          "teambottom teambottom teambottom";
-      }
-      
-      .Dan { 
-        grid-area: Dan;
-        text-align: center;
-    justify-self: end; }
-      
-      .Hanna { 
-          grid-area: Hanna; 
-          text-align: center;
-          justify-self: start;
-        }
-      
-      .The-Team { 
-          grid-area: The-Team; 
-          text-align: center;
-          height: 100px;
-        }
+#team {
+    height: 100vh;
+}
 
-        .teambottom{
-            grid-area: teambottom;
-            margin-top: -100px;
-        }
-      
+.aboutpg a {
+    text-decoration: none;
+    font-size: 15px;
+}
 
+.aboutpg {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "The-Team The-Team The-Team"
+        "Dan . Hanna"
+        "teambottom teambottom teambottom";
+}
+
+.Dan {
+    grid-area: Dan;
+    text-align: center;
+    justify-self: end;
+}
+
+.Hanna {
+    grid-area: Hanna;
+    text-align: center;
+    justify-self: start;
+}
+
+.The-Team {
+    grid-area: The-Team;
+    text-align: center;
+    height: 100px;
+}
+
+.teambottom {
+    grid-area: teambottom;
+    margin-top: -100px;
+}
+
+
+/*animation on scroll*/
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
   
-    /* media queries for tablet*/
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-    }
+  .reveal.active {
+    opacity: 1;
+  }
 
-    /*media querie for phone*/
-    @media screen and (max-width: 767px) {
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
 
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-300px);
+      opacity: 0;
     }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-right {
+    0% {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+/* media queries for tablet*/
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+/*media querie for phone*/
+@media screen and (max-width: 767px) {}
