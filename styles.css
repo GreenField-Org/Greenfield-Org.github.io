@@ -425,4 +425,23 @@ input {
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
 /*media querie for phone*/
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .container {  display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+          "text"
+          "photo"
+      }
+      
+      .text { 
+          grid-area: text;
+          width: 300px;
+         }
+      
+      .photo { 
+          grid-area: photo;
+          width: 100px;
+         }      
+
+}
