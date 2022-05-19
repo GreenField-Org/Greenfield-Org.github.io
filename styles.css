@@ -167,6 +167,10 @@ input {
 
 #message {
     height: 150px;
+    background-color: #b0c49c;
+    width: 300px;
+    border: 1px solid black;
+    font-family: arial;
     resize: none;
 }
 
