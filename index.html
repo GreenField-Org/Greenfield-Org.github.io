@@ -12,16 +12,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <script>
+          function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+                } else {
+                reveals[i].classList.remove("active");
+                }
+            }
+            }
+
+            window.addEventListener("scroll", reveal);
+      </script>
     </head>
     <body>
         <header>
             <div class="navbar">
                 <a href="#home"><img class="logo" src="./img/logo.PNG" alt="greenfield org logo"></a>
-                <div class="floatright">
+                <div id="floatright">
                     <a class="active" href="#home">Home</a>
-                    <!--
                     <a href="#projects">Projects</a>
-                    -->
                     <a href="#team">Team</a>
                     <a href="#contact">Contact</a>
                 </div>
@@ -41,8 +62,8 @@
          <div class="devpage">
             <div class="devtop"></div>
             <div class="webdev">
-                <img class="greenwebdev" src="./img/webdevgreen.svg">
-                <div class="webdevwords">
+                <img class="greenwebdev reveal fade-left" src="./img/webdevgreen.svg">
+                <div class="webdevwords reveal fade-left">
                     <h2>Website Development</h2>
                         <p>We are tech agnostic team passionate about learning technologies we will work with you to determine the right stack solution which best fits.</p>
                     </div>
@@ -54,15 +75,15 @@
                 <img class="devimg" src="./img/webapp.svg">
             </div>
             <div class="webapp">
-                <img src="./img/webappgreen.svg">
-                <div class="webappwords">
+                <img class="reveal fade-right"src="./img/webappgreen.svg">
+                <div class="webappwords reveal fade-right">
                     <h2>Website Applications</h2>
                         <p>bard fighter champ monk rogue d20 critical role jeff's cousins are doing a spirito santo at a portuguese place on may 15th - so it's not for a little while.</p>
                 </div>
             </div>
             <div class="mobiledev">
-                <img class="mobilegreen" src="./img/mobilegreen.svg">
-                <div class="mobilewords">
+                <img class="mobilegreen reveal fade-left" src="./img/mobilegreen.svg">
+                <div class="mobilewords reveal fade-left">
                     <h2>Mobile Development</h2>
                     <p>bard fighter champ monk rogue d20 critical role jeff's cousins are doing a spirito santo at a portuguese place on may 15th - so it's not for a little while.</p>
                 </div>
@@ -72,6 +93,70 @@
             </div>
             <div class="devbot"></div>
           </div>
+        <!-- PROJECTS -->
+        <div id="projects">
+            <div class="projectpg">
+                <div class="projtop">
+                    <h1>Projects</h1>
+                </div>
+                <div class="proj1">
+                    <img class="placeholder" src="./img/placeholder.png">
+                    <div class="projinfo">
+                        <h2>Project Name</h2></br>
+                        <p>Project info and tech stack and all that Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio esse saepe! Mollitia ratione similique ut quis, accusantium minus iure rerum voluptatibus quas quam harum excepturi aliquam corporis nostrum. Vel.</p>
+                        <a href="#" target="_blank" rel="noreferrer">Link</a><br/>
+                    </div>
+                </div>
+                <div class="proj2">
+                    <img class="placeholder" src="./img/placeholder.png">
+                    <div class="projinfo">
+                        <h2>Project Name</h2></br>
+                        <p>Project info and tech stack and all that Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio esse saepe! Mollitia ratione similique ut quis, accusantium minus iure rerum voluptatibus quas quam harum excepturi aliquam corporis nostrum. Vel.</p>
+                        <a href="#" target="_blank" rel="noreferrer">Link</a><br/>
+                    </div>
+                </div>
+                <div class="proj3">
+                    <img class="placeholder" src="./img/placeholder.png">
+                    <div class="projinfo">
+                        <h2>Project Name</h2></br>
+                        <p>Project info and tech stack and all that Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio esse saepe! Mollitia ratione similique ut quis, accusantium minus iure rerum voluptatibus quas quam harum excepturi aliquam corporis nostrum. Vel.</p>
+                        <a href="#" target="_blank" rel="noreferrer">Link</a><br/>
+                    </div>
+                </div>
+                <div class="proj4">
+                    <img class="placeholder" src="./img/placeholder.png">
+                    <div class="projinfo">
+                        <h2>Project Name</h2></br>
+                        <p>Project info and tech stack and all that Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio esse saepe! Mollitia ratione similique ut quis, accusantium minus iure rerum voluptatibus quas quam harum excepturi aliquam corporis nostrum. Vel.</p>
+                        <a href="#" target="_blank" rel="noreferrer">Link</a><br/>
+                    </div>
+                </div>
+                <div class="proj5">
+                    <img class="placeholder" src="./img/placeholder.png">
+                    <div class="projinfo">
+                        <h2>Project Name</h2></br>
+                        <p>Project info and tech stack and all that Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio esse saepe! Mollitia ratione similique ut quis, accusantium minus iure rerum voluptatibus quas quam harum excepturi aliquam corporis nostrum. Vel.</p>
+                        <a href="#" target="_blank" rel="noreferrer">Link</a><br/>
+                    </div>
+                </div>
+                <div class="proj6">
+                    <img class="placeholder" src="./img/placeholder.png">
+                    <div class="projinfo">
+                        <h2>Project Name</h2></br>
+                        <p>Project info and tech stack and all that Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio esse saepe! Mollitia ratione similique ut quis, accusantium minus iure rerum voluptatibus quas quam harum excepturi aliquam corporis nostrum. Vel.</p>
+                        <a href="#" target="_blank" rel="noreferrer">Link</a><br/>
+                    </div>
+                </div>
+                <div class="projbot">
+                    <img class="projppl" src="./img/projppl.svg">
+                    <div class="projinfo">
+                        <h2>Project Name</h2></br>
+                        <p>Project info and tech stack and all that Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio esse saepe! Mollitia ratione similique ut quis, accusantium minus iure rerum voluptatibus quas quam harum excepturi aliquam corporis nostrum. Vel.</p>
+                        <a href="#" target="_blank" rel="noreferrer">Link</a><br/>
+                    </div>
+                </div>
+              </div>
+        </div>
          <!-- TEAM -->
          <div id="team">
             <div class="aboutpg">
@@ -105,7 +190,7 @@
             <div>
                 <h1>Contact Us</h1>
                     <div class="contactform">
-                        <form action="mailto:development.gf@gmail.com">
+                        <form action="https://formsubmit.co/development.gf@gmail.com" method="POST">
                             <label for="name">Name</label><br>
                             <input type="text" id="name" name="name"><br>
                             <label for="email">Email</label><br>
@@ -113,10 +198,11 @@
                             <label for="Title">Title</label><br>
                             <input type="text" id="title" name="title"><br>
                             <label for="message">Message</label><br>
-                            <input type="textarea" id="message" name="message"><br>
+                            <textarea type="text" id="message" name="message"></textarea><br>
                             <button class="submit" type="submit" value="Submit">Send</button>
                         </form>
                     </div>
+                    <h2>&#9993; development.gf@gmail.com</h2>
                 <div class="contactimg">
                     <img src="./img/coffee.svg">
                     <img src="/img/pplsitting.svg">
