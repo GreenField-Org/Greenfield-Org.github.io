@@ -12,10 +12,11 @@ body {
     width: 100vw;
 }
 
-.devpage {
+.devpage {  
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
     gap: 0px 0px;
     grid-auto-flow: row;
     font-family: 'arial';
@@ -31,19 +32,30 @@ body {
 }
 
 
-.devbot {
-    grid-area: 5 / 1 / 6 / 5;
-    width: 100vw;
+  
+.devbot { 
+  grid-area: 5 / 1 / 6 / 5; 
+  height: 35vh;
+  width: 100vw;
+  background-image: url('./img/botgreen.svg');
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-position: top;
 }
-
-.webdev {
-    grid-area: 2 / 1 / 3 / 5;
+  
+.webdev { 
+  grid-area: 2 / 1 / 3 / 5; 
 }
+  
+.devtop { 
+  grid-area: 1 / 1 / 2 / 5; 
+  height: 35vh;
+  width: 100vw;
+  background-image: url('./img/topgreen.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 
-.devtop {
-    grid-area: 1 / 1 / 2 / 5;
-    height: 10vh;
-    width: 100vw;
 }
 
 .webphoto {
@@ -218,31 +230,26 @@ input {
     color: #5E8932;
 }
 
-
-#floatright {
+  .floatright{
     float: right;
     margin-top: 25px;
-    margin-right: 20px;
-}
+  }
 
-#home {
+  #home{
     height: 100vh;
-}
-
-/*home page grid */
-#home {
+  }
+  /*home page grid */
+  #home{
     height: 100vh;
-}
+  }
+  .container {  
 
-.container {
     display: grid;
     justify-content: center;
     align-content: center;
     font-family: arial;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 0px 0px;
     grid-template-areas:
         "Photo Text Text"
@@ -272,6 +279,11 @@ input {
     height: 399px;
 }
 
+
+  .Text { 
+    grid-area: Text;
+    align-items:center;
+  )
 .homeimage {
     height: 600px;
 }
