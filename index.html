@@ -132,7 +132,7 @@
             <div>
                 <h1>Contact Us</h1>
                     <div class="contactform">
-                        <form>
+                        <form action="https://formsubmit.co/development.gf@gmail.com" method="POST">
                             <label for="name">Name</label><br>
                             <input type="text" id="name" name="name"><br>
                             <label for="email">Email</label><br>
@@ -141,27 +141,9 @@
                             <input type="text" id="title" name="title"><br>
                             <label for="message">Message</label><br>
                             <input type="textarea" id="message" name="message"><br>
-                            <a class="submit" type="submit" value="Submit"
-                            href = "mailto:development.gf@gmail.com?subject="subject""
-                            >Send</button>
+                            <button class="submit" type="submit" value="Submit">Send</button>
                         </form>
                     </div>
-                    <script src="https://smtpjs.com/v3/smtp.js"></script>
-                    <script>
-                        function sendEmail(){
-                            Email.send({
-                                Host : "smtp.yourisp.com",
-                                Username : "username",
-                                Password : "password",
-                                To : 'them@website.com',
-                                From : "you@isp.com",
-                                Subject : "This is the subject",
-                                Body : "And this is the body"
-                            }).then(
-                            message => alert(message)
-                            );
-                        }
-                    </script>
                 <div class="contactimg">
                     <img src="./img/coffee.svg">
                     <img src="/img/pplsitting.svg">
