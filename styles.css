@@ -96,6 +96,11 @@ body {
     width: 100vw;
 }
 
+#contact h2{
+    margin-top: -230px;
+    font-family: arial;
+}
+
 .footer {
     background-color: #5E8932;
     text-align: center;
