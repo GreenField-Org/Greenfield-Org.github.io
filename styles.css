@@ -381,4 +381,8 @@ input {
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
 /*media querie for phone*/
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .footer{
+        font-size: 12px;
+    }
+}
