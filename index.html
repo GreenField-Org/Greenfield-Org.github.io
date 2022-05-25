@@ -12,12 +12,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <script>
+          function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+                } else {
+                reveals[i].classList.remove("active");
+                }
+            }
+            }
+
+            window.addEventListener("scroll", reveal);
+      </script>
     </head>
     <body>
         <header>
             <div class="navbar">
                 <a href="#home"><img class="logo" src="./img/logo.PNG" alt="greenfield org logo"></a>
-                <div class="floatright">
+                <div id="floatright">
                     <a class="active" href="#home">Home</a>
                     <!--
                     <a href="#projects">Projects</a>
@@ -43,8 +66,8 @@
                 <img class="topgreen" src="./img/topgreen.svg">
             </div>
             <div class="webdev">
-                <img class="greenwebdev" src="./img/webdevgreen.svg">
-                <div class="webdevwords">
+                <img class="greenwebdev reveal fade-left" src="./img/webdevgreen.svg">
+                <div class="webdevwords reveal fade-left">
                     <h2>Website Development</h2>
                         <p>We are tech agnostic team passionate about learning technologies we will work with you to determine the right stack solution which best fits.</p>
                     </div>
@@ -56,15 +79,15 @@
                 <img class="devimg" src="./img/webapp.svg">
             </div>
             <div class="webapp">
-                <img src="./img/webappgreen.svg">
-                <div class="webappwords">
+                <img class="reveal fade-right"src="./img/webappgreen.svg">
+                <div class="webappwords reveal fade-right">
                     <h2>Website Applications</h2>
                         <p>bard fighter champ monk rogue d20 critical role jeff's cousins are doing a spirito santo at a portuguese place on may 15th - so it's not for a little while.</p>
                 </div>
             </div>
             <div class="mobiledev">
-                <img class="mobilegreen" src="./img/mobilegreen.svg">
-                <div class="mobilewords">
+                <img class="mobilegreen reveal fade-left" src="./img/mobilegreen.svg">
+                <div class="mobilewords reveal fade-left">
                     <h2>Mobile Development</h2>
                     <p>bard fighter champ monk rogue d20 critical role jeff's cousins are doing a spirito santo at a portuguese place on may 15th - so it's not for a little while.</p>
                 </div>
@@ -117,7 +140,7 @@
                             <label for="Title">Title</label><br>
                             <input type="text" id="title" name="title"><br>
                             <label for="message">Message</label><br>
-                            <input type="textarea" id="message" name="message"><br>
+                            <textarea type="text" id="message" name="message"></textarea><br>
                             <button class="submit" type="submit" value="Submit">Send</button>
                         </form>
                     </div>

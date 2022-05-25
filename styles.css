@@ -167,6 +167,10 @@ input {
 
 #message {
     height: 150px;
+    background-color: #b0c49c;
+    width: 300px;
+    border: 1px solid black;
+    font-family: arial;
     resize: none;
 }
 
@@ -197,6 +201,7 @@ input {
     font-size: 20px;
 }
 
+
 /* Change the color of links on hover */
 .navbar a:hover {
     color: #5E8932;
@@ -209,7 +214,7 @@ input {
 }
 
 
-.floatright {
+#floatright {
     float: right;
     margin-top: 25px;
     margin-right: 20px;
@@ -376,6 +381,45 @@ input {
 }
 
 
+/*animation on scroll*/
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-right {
+    0% {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
 /* media queries for tablet*/
 @media screen and (min-width: 768px) and (max-width: 991px) {}
