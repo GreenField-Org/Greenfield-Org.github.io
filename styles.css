@@ -426,6 +426,19 @@ input {
 
 /*media querie for phone*/
 @media screen and (max-width: 767px) {
+    #team{
+        display: none;
+    }
+
+    #contact{
+        display: none;
+    }
+
+    .devpage{
+        display:none;
+    }
+
+
     .container {
         height: 100vh;
         width: 100vw;
@@ -433,24 +446,23 @@ input {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
         grid-template-areas:
-          "text text"
-          "text text"
-          "photo photo"
+            "text text"
+            "text text"
+            "photo photo"
       }
+    .homeimage{
+        width: 350px;
+        height: 350px;
+    }
       
-      .text{ 
+      .Text{ 
           grid-area: text;
-          width: 100vw;
+          margin-top: -100px;
+          width: 95vw;
         }
-
-        .text h1{
-            width: 100px;
-        }
-
       
-      .photo { 
-          grid-area: photo;
-          width: 100px;
-         }      
+    .Photo { 
+        grid-area: photo;
+    }      
 
 }
