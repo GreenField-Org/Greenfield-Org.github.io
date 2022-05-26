@@ -283,7 +283,7 @@ input {
   .Text { 
     grid-area: Text;
     align-items:center;
-  )
+  }
 .homeimage {
     height: 600px;
 }
