@@ -529,7 +529,7 @@ input {
 @media screen and (max-width: 767px) {
     .aboutpg {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: auto auto auto auto;
         grid-template-rows: auto auto auto;
         gap: 0px 0px;
         grid-auto-flow: row;
@@ -542,14 +542,15 @@ input {
     
     .Dan {
         grid-area: Dan;
-        text-align: center;
-        justify-self: end;
+        width: 300px;
+        justify-self: center;
+
     }
     
     .Hanna {
         grid-area: Hanna;
         text-align: center;
-        justify-self: start;
+        justify-self: center;
     }
     
     .The-Team {
@@ -557,10 +558,31 @@ input {
         text-align: center;
         height: 100px;
     }
+
+    .svgcontd{
+        width: 300px;
+        height: 365px;
+    }
+
+    .emptydesk{
+        display: none;
+    }
+
+    .svgconth{
+        width: 200px;
+    }
     
     .teambottom {
         grid-area: teambottom;
-        margin-top: -100px;
+    }
+
+    .teamplant{
+        align-self: center;
+        height: 50px;
+    }
+
+    .smplant{
+        display: none;
     }
 
     #contact{
@@ -624,10 +646,4 @@ input {
           width: 100px;
     }
 
-    .aboutpg{
-        grid-template-areas:
-        'The Team'
-        'Dan'
-        'Hanna'
-    }
 }
