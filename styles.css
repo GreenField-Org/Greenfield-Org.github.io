@@ -527,7 +527,61 @@ input {
 
 /*media querie for phone*/
 @media screen and (max-width: 767px) {
-    #team{
+    .aboutpg {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "The-Team"
+            "Dan"
+            "Hanna"
+            "teambottom";
+    }
+    
+    .Dan {
+        grid-area: Dan;
+        width: 300px;
+        justify-self: center;
+
+    }
+    
+    .Hanna {
+        grid-area: Hanna;
+        text-align: center;
+        justify-self: center;
+    }
+    
+    .The-Team {
+        grid-area: The-Team;
+        text-align: center;
+        height: 100px;
+    }
+
+    .svgcontd{
+        width: 300px;
+        height: 365px;
+    }
+
+    .emptydesk{
+        display: none;
+    }
+
+    .svgconth{
+        width: 200px;
+    }
+    
+    .teambottom {
+        grid-area: teambottom;
+    }
+
+    .teamplant{
+        align-self: center;
+        height: 50px;
+    }
+
+    .smplant{
         display: none;
     }
 
@@ -539,6 +593,7 @@ input {
     #projects{
         display: none;
     }
+
 
     #home{
         width: 100vw;
@@ -698,5 +753,4 @@ input {
         width: 350px;
         margin-left: 35px;
     }
-
 }
