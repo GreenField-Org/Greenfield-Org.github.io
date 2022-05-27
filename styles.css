@@ -613,35 +613,20 @@ input {
           width: 300px;
           height: 300px;
       }
-      .placeholder:hover{
-          width: 500px;
-          display: none;
-      }
-      
-      .placeholder:hover +.projinfo{
-          display: block;
-          background-color: #b0c49c;
-      }
       
       .projinfo{
-          padding: 5px;
           text-align: center;
-          display: none;
           font-family: arial;
-          width: 300px;
+          width: 320px;
+          display: block;
           color: black;
           height: 300px;
       }
 
-      .projinfo{
-        padding: 5px;
-        text-align: center;
-        display: none;
-        font-family: arial;
-        width: 300px;
-        color: black;
-        height: 300px;
-    }
+      .projinfo p{
+          margin-top: -20px;
+      }
+
     
     .proj1 { 
         grid-area: proj1;
