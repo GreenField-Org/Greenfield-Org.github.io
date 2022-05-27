@@ -531,17 +531,32 @@ input {
         display: none;
     }
 
-    #contact{
-        display: none;
-    }
 
     .devpage{
         display:none;
     }
 
+    #projects{
+        display: none;
+    }
 
     #home{
         width: 100vw;
+        display: none;
+    }
+
+    .contactform{
+        width: 70vw;
+        margin-left: 40px;
+
+    }
+
+    .contactform input{
+        width: 250px;
+    }
+
+    #message{
+        width: 250px;
     }
     .container {
         height: 100vh;
