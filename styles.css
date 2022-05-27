@@ -555,6 +555,15 @@ input {
         width: 250px;
     }
 
+    #contact h2{
+        margin-top: -420px;
+        font-size: 16px;
+    }
+    .contactimg{
+        height: 100px;
+        width: 100px;
+    }
+
     #message{
         width: 250px;
     }
