@@ -527,7 +527,34 @@ input {
 
 /*media querie for phone*/
 @media screen and (max-width: 767px) {
-    .footer{
-        font-size: 12px;
+    #home{
+        width: 100vw;
     }
-}
+    .container {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+          "text text"
+          "text text"
+          "photo photo"
+    }
+      
+    .text{ 
+          grid-area: text;
+          width: 100vw;
+    }
+      
+    .photo { 
+          grid-area: photo;
+          width: 100px;
+    }
+
+    .aboutpg{
+        grid-template-areas:
+        'The Team'
+        'Dan'
+        'Hanna'
+    }
