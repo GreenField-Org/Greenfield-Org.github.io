@@ -559,9 +559,18 @@ input {
         margin-top: -420px;
         font-size: 16px;
     }
+    .coffeepot{
+        display: none;
+    }
+
     .contactimg{
-        height: 100px;
-        width: 100px;
+        margin-top: 355px;
+    }
+
+    .sittingppl{
+        height: 200px;
+        margin-left: -150px;
+        margin-bottom: 0;
     }
 
     #message{
