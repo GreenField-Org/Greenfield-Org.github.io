@@ -527,8 +527,40 @@ input {
 
 /*media querie for phone*/
 @media screen and (max-width: 767px) {
-    #team{
-        display: none;
+    .aboutpg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "The-Team"
+            "Dan"
+            "Hanna"
+            "teambottom";
+    }
+    
+    .Dan {
+        grid-area: Dan;
+        text-align: center;
+        justify-self: end;
+    }
+    
+    .Hanna {
+        grid-area: Hanna;
+        text-align: center;
+        justify-self: start;
+    }
+    
+    .The-Team {
+        grid-area: The-Team;
+        text-align: center;
+        height: 100px;
+    }
+    
+    .teambottom {
+        grid-area: teambottom;
+        margin-top: -100px;
     }
 
     #contact{
@@ -539,9 +571,14 @@ input {
         display:none;
     }
 
+    #projects{
+        display: none;
+    }
+
 
     #home{
         width: 100vw;
+        display: none;
     }
     .container {
         height: 100vh;
