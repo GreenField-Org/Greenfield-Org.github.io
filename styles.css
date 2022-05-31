@@ -103,7 +103,7 @@ body {
 
 #contact {
     background-color: #b0c49c;
-    height: 100vh;
+    height: 89vh;
     text-align: center;
     width: 100vw;
 }
@@ -119,6 +119,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100vw;
+    height: 2vh;
     font-family: 'open sans';
     color: #fff;
     font-weight: bold;
@@ -203,7 +204,7 @@ input {
 
 /* Add a black background color to the top navigation */
 .navbar {
-    height: 100px;
+    height: 9vh;
     background-color: #fff;
     overflow: hidden;
     font-family: 'open sans';
@@ -236,11 +237,11 @@ input {
   }
 
   #home{
-    height: 100vh;
+    height: 89vh;
   }
   /*home page grid */
   #home{
-    height: 100vh;
+    height: 89vh;
   }
   .container {  
 
@@ -354,7 +355,7 @@ input {
 }
 
 #team {
-    height: 100vh;
+    height: 89vh;
 }
 
 .aboutpg a {
@@ -398,7 +399,7 @@ input {
 }
 
 .projects{
-    height: 100vh;
+    height: 89vh;
     width: 100vw;
 }
 
@@ -632,7 +633,7 @@ input {
         width: 250px;
     }
     .container {
-        height: 100vh;
+        height: 89vh;
         width: 100vw;
         display: grid;
         grid-template-columns: auto auto;
