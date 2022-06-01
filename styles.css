@@ -529,8 +529,8 @@ input {
 @media screen and (max-width: 767px) {
     .aboutpg {
         display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -539,7 +539,7 @@ input {
             "Hanna"
             "teambottom";
     }
-    
+
     .Dan {
         grid-area: Dan;
         width: 300px;
@@ -560,8 +560,9 @@ input {
     }
 
     .svgcontd{
-        width: 300px;
-        height: 365px;
+        background-repeat: no-repeat;
+        background-size:auto;
+        background-position: top;
     }
 
     .emptydesk{
@@ -569,7 +570,9 @@ input {
     }
 
     .svgconth{
-        width: 200px;
+        background-repeat: no-repeat;
+        background-size:auto;
+        background-position: top;
     }
     
     .teambottom {
