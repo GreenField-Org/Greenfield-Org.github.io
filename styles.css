@@ -546,11 +546,20 @@ input {
         justify-self: center;
 
     }
+
+    .Dan img{
+        height: 450px;
+    }
     
     .Hanna {
         grid-area: Hanna;
         text-align: center;
         justify-self: center;
+        margin-bottom: 100px;
+    }
+
+    .Hanna img{
+        height: 450px;
     }
     
     .The-Team {
@@ -561,8 +570,8 @@ input {
 
     .svgcontd{
         background-repeat: no-repeat;
-        background-size:auto;
-        background-position: top;
+        background-size: 100%;
+        background-position: 100% 50%;
     }
 
     .emptydesk{
@@ -571,8 +580,8 @@ input {
 
     .svgconth{
         background-repeat: no-repeat;
-        background-size:auto;
-        background-position: top;
+        background-size: 100%;
+        background-position: 100% 50%;
     }
     
     .teambottom {
