@@ -129,7 +129,6 @@ body {
 
 .logo {
     height: 40px;
-    margin-top: 20px;
 }
 
 .button {
@@ -208,6 +207,7 @@ input {
     background-color: #fff;
     overflow: hidden;
     font-family: 'open sans';
+    float: right;
 }
 
 /* Style the links inside the navigation bar */
@@ -232,7 +232,7 @@ input {
 }
 
   .floatright{
-    float: right;
+    float: right !important;
     margin-top: 25px;
   }
 
