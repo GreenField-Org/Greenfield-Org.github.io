@@ -37,16 +37,21 @@
       </script>
     </head>
     <body>
-        <header>
+        <header class="header">
             <a href="#home"><img class="logo" src="./img/logo.PNG" alt="greenfield org logo"></a>
-            <div class="navbar">
-                    <div id="floatright">
-                    <a class="active" href="#home">Home</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#team">Team</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
+
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+            <nav class="navbar">
+                <ul id="floatright" class="menu">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </header>
         <div class="container" id="home">
             <div class="Photo">
