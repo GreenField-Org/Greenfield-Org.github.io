@@ -542,7 +542,6 @@ input {
 
     .Dan {
         grid-area: Dan;
-        width: 300px;
         justify-self: center;
 
     }
@@ -552,6 +551,7 @@ input {
     }
     
     .Hanna {
+        margin-top: 50px;
         grid-area: Hanna;
         text-align: center;
         justify-self: center;
