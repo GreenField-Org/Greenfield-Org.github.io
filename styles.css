@@ -587,18 +587,8 @@ input {
     }
 
 
-    .devpage{
-        display:none;
-    }
-
-    #projects{
-        display: none;
-    }
-
-
     #home{
         width: 100vw;
-        display: none;
     }
 
     .contactform{
