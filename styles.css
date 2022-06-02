@@ -16,11 +16,11 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-
     gap: 0px 0px;
     grid-auto-flow: row;
     font-family: 'arial';
     align-items: center;
+    width: 100vw;
 }
 
 .devpage p {
@@ -39,8 +39,8 @@ body {
   width: 100vw;
   background-image: url('./img/botgreen.svg');
   background-repeat: no-repeat;
-  background-size:auto;
-  background-position: top;
+  background-size:100% 100%;
+  overflow: hidden;
 }
   
 .webdev { 
