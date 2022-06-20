@@ -286,14 +286,14 @@ input {
 
 .svgcontd {
     background: url(./img/dangreen.svg);
-    width: 422px;
-    height: 365px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .svgconth {
-    background: url(./img/hannagreen.svg);
-    width: 445px;
-    height: 399px;
+    background-image: url(./img/hannagreen.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
