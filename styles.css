@@ -540,7 +540,16 @@ input {
   }
 
 /* media queries for tablet*/
-@media screen and (min-width: 768px) and (max-width: 991px) {}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .contactimg {
+        margin-top: 300px;
+        margin-right: 250px;
+    }
+
+    .contactimg img {
+        display: none;
+    }
+}
 
 /*media querie for phone*/
 @media screen and (max-width: 767px) {
@@ -599,6 +608,10 @@ input {
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: 100% 50%;
+    }
+
+    #team {
+        height: 1200px;
     }
     
     .teambottom {
@@ -702,7 +715,7 @@ input {
         width: 100vw;
     }
 
-    .contactform{
+    .contactform {
         width: 70vw;
         margin-left: 40px;
 
@@ -710,6 +723,10 @@ input {
 
     .contactform input{
         width: 250px;
+    }
+
+    #contact {
+        height: 700px;
     }
 
     #contact h2{
@@ -721,7 +738,8 @@ input {
     }
 
     .contactimg{
-        margin-top: 355px;
+        margin-top: 450px;
+        margin-right: 100px;
     }
 
     .sittingppl{
