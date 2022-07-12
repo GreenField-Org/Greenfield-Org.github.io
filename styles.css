@@ -498,6 +498,11 @@ input {
     margin-top: -80px;
 }
 
+.thankyouimage{
+    height: 80vh;
+    margin-top: 15vh;
+}
+
 
 /*animation on scroll*/
 .reveal {
