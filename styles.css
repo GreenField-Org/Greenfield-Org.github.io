@@ -498,9 +498,20 @@ input {
     margin-top: -80px;
 }
 
+.thankyou{
+    width: 60vw;
+}
+
 .thankyouimage{
     height: 80vh;
     margin-top: 15vh;
+    float: left;
+    margin-left: 100px;
+}
+
+.thankyoutext{
+    margin-top: 50vh;
+    float: right;
 }
 
 
