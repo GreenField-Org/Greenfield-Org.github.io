@@ -540,7 +540,71 @@ input {
   }
 
 /* media queries for tablet*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        display: inline-grid;
+        justify-content: center;
+        align-content: center;
+        font-family: arial;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            "Photo Text"
+    }
+    .Text{ 
+        grid-area: text;
+        margin-top: -100px;
+        width: 90vw;
+    }
+    .Photo { 
+        grid-area: photo; 
+    }
+
+    .devpage {  
+        display: inline-grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        font-family: 'arial';
+        align-items: center;
+        width: 100vw;
+    }
+    .devtop {
+        background-image: url('./img/topgreen.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+        grid-area: 1 / 1 / 1 / 1;
+    }
+    .webdev { 
+        grid-area: 3 / 1 / 3 / 1; 
+        justify-self: center;
+    }
+    .webphoto {
+        grid-area: 2 / 1 / 2 / 1;
+        justify-content: center;
+    }
+    .appphoto {
+        grid-area: 4 / 1 / 4 / 1;
+        justify-self: center;
+    }
+    
+    .webapp {
+        grid-area: 5 / 1 / 5 / 1;
+        justify-self: center;
+    }
+    .mobiledev {
+        grid-area: 7 / 1 / 7 / 1;
+    }
+    .mobilephoto {
+        grid-area: 6 / 1 / 6 / 1;
+        justify-self: center;
+    }
+    .devbot {
+        grid-area: 8 / 1 / 8 / 3;
+    }
     .contactimg {
         margin-top: 300px;
         margin-right: 250px;
