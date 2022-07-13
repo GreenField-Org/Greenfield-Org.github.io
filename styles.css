@@ -574,6 +574,25 @@ input {
     .contactimg img {
         display: none;
     }
+
+    .thankyou {
+        display: flex; 
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        grid-template-areas: 
+          "thankyoutext"
+          "thankyouimage"; 
+      }
+
+    .thankyoutext{
+        width: 300px;
+        margin-top: 0px;
+    }
+    
+    .thankyouimage{
+        margin-top: 10px;
+    }
 }
 
 /*media querie for phone*/
