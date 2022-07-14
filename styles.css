@@ -498,6 +498,31 @@ input {
     margin-top: -80px;
 }
 
+.thankyou {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "thankyouimage thankyoutext"; 
+  }
+
+  .thankyouimage { 
+    grid-area: thankyouimage;
+    height: 80vh;
+    margin-top: 15vh;
+    float: left;
+    margin-left: 100px;
+}
+
+  .thankyoutext { 
+    grid-area: thankyoutext;
+    margin-top: 50vh;
+    float: right;
+    font-family: arial;
+}
+
+
 
 /*animation on scroll*/
 .reveal {
@@ -612,6 +637,25 @@ input {
 
     .contactimg img {
         display: none;
+    }
+
+    .thankyou {
+        display: flex; 
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        grid-template-areas: 
+          "thankyoutext"
+          "thankyouimage"; 
+      }
+
+    .thankyoutext{
+        width: 300px;
+        margin-top: 0px;
+    }
+    
+    .thankyouimage{
+        margin-top: 10px;
     }
 }
 
@@ -936,5 +980,26 @@ input {
     .projppl{
         width: 350px;
         margin-left: 35px;
+    }
+
+    .thankyou {
+        display: flex; 
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        grid-template-areas: 
+          "thankyoutext"
+          "thankyouimage"; 
+      }
+
+    .thankyoutext{
+        width: 300px;
+        margin-top: 0px;
+    }
+    
+    .thankyouimage{
+        margin-left: 0px;
+        margin-top: 10px;
+        width: 400px;
     }
 }
