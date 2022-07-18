@@ -539,8 +539,8 @@ input {
     /* HOME SECTION */
     .container {
         display: inline-grid;
-        justify-content: center;
-        align-content: center;
+        justify-content:baseline;
+        align-content: baseline;
         font-family: arial;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
