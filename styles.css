@@ -666,166 +666,13 @@ input {
 
 /*media querie for phone*/
 @media screen and (max-width: 767px) {
-    /* HOME SECTION */
-    .container {
-        display: inline-grid;
-        justify-content: center;
-        align-content: center;
-        font-family: arial;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0 0;
-        grid-template-areas:
-            "Text"
-            "Photo"
-    }
-
-    .Text { 
-        grid-area: Text;
-        justify-content: center;
-        align-self: center;
-        text-align: center;
-    }
-
-    .Text h1 {
-        width: auto;
-    }
-
-    .Text p {
-        width: auto;
-    }
-
-    .Photo { 
-        grid-area: Photo; 
-        width: auto;
-    }
-    /* END HOME SECTION */
-    .devpage {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        gap: 0px 0px;
-        font-family: 'arial';
-        align-items: center;
-        width: 100vw;
-    }
-    .devtop {
-        background-image: url('./img/topgreen.svg');
-        background-repeat: no-repeat;
-        background-size: contain;
-        overflow: hidden;
-        grid-area: 1 / 1 / 1 / 1;
-    }
-    .webdev { 
-        grid-area: 3 / 1 / 3 / 1; 
-        justify-self: center;
-    }
-    .webphoto {
-        grid-area: 2 / 1 / 2 / 1;
-        justify-self: center;
-    }
-    .webphoto img {
-        width: 300px;
-    }
-    .appphoto {
-        grid-area: 4 / 1 / 4 / 1;
-        justify-self: center;
-    }
-    
-    .webapp {
-        grid-area: 5 / 1 / 5 / 1;
-        justify-self: center;
-    }
-    .mobiledev {
-        grid-area: 7 / 1 / 7 / 1;
-    }
-    .mobilephoto {
-        grid-area: 6 / 1 / 6 / 1;
-        justify-self: center;
-    }
-    .devbot {
-        grid-area: 8 / 1 / 8 / 3;
-    }
-
-    .aboutpg {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "The-Team"
-            "Dan"
-            "Hanna"
-            "teambottom";
-    }
-
-    .Dan {
-        grid-area: Dan;
-        justify-self: center;
-
-    }
-
-    .Dan img{
-        height: 450px;
-    }
-    
-    .Hanna {
-        margin-top: 50px;
-        grid-area: Hanna;
-        text-align: center;
-        justify-self: center;
-        margin-bottom: 100px;
-    }
-
-    .Hanna img{
-        height: 450px;
-    }
-    
-    .The-Team {
-        grid-area: The-Team;
-        text-align: center;
-        height: 100px;
-    }
-
-    .svgcontd{
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 100% 50%;
-    }
-
-    .emptydesk{
-        display: none;
-    }
-
-    .svgconth{
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 100% 50%;
-    }
-
-    #team {
-        height: 1200px;
-    }
-    
-    .teambottom {
-        grid-area: teambottom;
-    }
-
-    .teamplant{
-        align-self: center;
-        height: 50px;
-    }
-
-    .smplant{
-        display: none;
-    }
-
+    /* NAVIGATION */
     .header{
         position: sticky;
         top: 0;
         width: 100%;
         z-index: 9;
+        background-color: #fff;
     }
 
     .logo {
@@ -904,86 +751,148 @@ input {
         transform: rotate(45deg);
         top:0;
     }
+    /* END NAVIGATION */
 
-    .contactform {
-        width: 70vw;
-        margin-left: 40px;
-
-    }
-
-    .contactform input{
-        width: 250px;
-    }
-
-    #contact {
-        height: 700px;
-    }
-
-    #contact h2{
-        margin-top: -420px;
-        font-size: 16px;
-    }
-    .coffeepot{
-        display: none;
-    }
-
-    .contactimg{
-        margin-top: 450px;
-        margin-right: 100px;
-    }
-
-    .sittingppl{
-        height: 200px;
-        margin-left: -150px;
-        margin-bottom: 0;
-    }
-
-    #message{
-        width: 250px;
-    }
+    /* HOME SECTION */
     .container {
-        height: 89vh;
-        width: 100vw;
         display: grid;
-        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
         grid-template-rows: auto auto auto;
         grid-template-areas:
-            "text text"
-            "text text"
-            "photo photo"
-      }
-    .homeimage{
-        width: 350px;
-        height: 350px;
+            "text"
+            "text"
+            "photo"
     }
       
-      .Text{ 
-          grid-area: text;
-          margin-top: -100px;
-          width: 95vw;
-        }
+    .Text{ 
+        grid-area: text;
+        width: 95vw;
+        align-items: center;
+    }
+
+    .Text h1 {
+        margin: 10px 50px;
+        width: 95%;
+    }
+
+    .Text p {
+        margin: 10px 50px;
+        width: 95%;
+    }
       
     .Photo { 
         grid-area: photo; 
-    }
-      
-    .text{ 
-          grid-area: text;
-          width: 100vw;
-    }
-      
-    .photo { 
-          grid-area: photo;
-          width: 100px;
+        width: 100%;
     }
 
-    .aboutpg{
-        grid-template-areas:
-        'The Team'
-        'Dan'
-        'Hanna'
+    .Photo img {
+        width: 100%;
+        height: 100%;  
+    }
+    /* END HOME SECTION */
+
+    /* ABOUT SECTION */
+    .devpage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 0px 0px;
+        font-family: 'arial';
+        align-items: center;
+        width: 90vw;
     }
 
+    .devtop {
+        background-image: url('./img/topgreen.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+        grid-area: 1 / 1 / 1 / 1;
+    }
+
+    .webdev { 
+        grid-area: 3 / 1 / 3 / 1; 
+        justify-self: start;
+    }
+
+    .greenwebdev {
+        width: 70%;
+        height: 70%;
+        margin-left: 50px;
+    }
+
+    .webdevwords {
+        text-align: center;
+        width: 300px;
+        line-height: 25px;
+        margin-left: 50px;
+    }
+
+    .webphoto {
+        grid-area: 2 / 1 / 2 / 1;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .webphoto img {
+        width: 100%;
+    }
+    
+    .appphoto {
+        grid-area: 4 / 1 / 4 / 1;
+        justify-self: center;
+    }
+    
+    .appphoto img {
+        width: 100%;
+    }
+
+    .webapp {
+        grid-area: 5 / 1 / 5 / 1;
+        justify-self: center;
+    }
+
+    .webappwords {
+        text-align: center;
+        width: 300px;
+        line-height: 25px;
+        margin-left: 0;
+    }
+
+    .mobiledev {
+        grid-area: 7 / 1 / 7 / 1;
+    }
+    
+    .mobilephoto {
+        grid-area: 6 / 1 / 6 / 1;
+        justify-self: center;
+    }
+    
+    .mobilephoto img {
+        width: 100%;
+    }
+
+    .mobilewords {
+        width: 300px;
+        margin-top: -250px;
+        line-height: 25px;
+        margin-left: 50px;
+    }
+    
+    .mobilegreen {
+        width: 70%;
+        height: 70%;
+        margin-left: 50px;
+    }
+
+    .devbot {
+        grid-area: 8 / 1 / 8 / 3;
+    }
+    /* END DEV SECTION */
+
+    /* PROJECT SECTION */
     .projectpg {  display: grid;
         grid-template-columns: auto ;
         grid-template-rows: auto auto auto auto auto auto;
@@ -1006,12 +915,12 @@ input {
           height: 100px; 
       }
       
-      .placeholder{
+      .placeholder {
           width: 300px;
           height: 300px;
       }
       
-      .projinfo{
+      .projinfo {
           text-align: center;
           font-family: arial;
           width: 320px;
@@ -1020,7 +929,7 @@ input {
           height: 300px;
       }
 
-      .projinfo p{
+      .projinfo p {
           margin-top: -20px;
       }
 
@@ -1050,7 +959,8 @@ input {
         justify-self: center;
      }
     
-    .proj6 { grid-area: proj6;
+    .proj6 { 
+        grid-area: proj6;
         justify-self: center;
     }
     
@@ -1059,11 +969,122 @@ input {
         margin-top: -80px;
     }
 
-    .projppl{
+    .projppl {
         width: 350px;
         margin-left: 35px;
     }
+    /* END PROJECT SECTION */
 
+    /* TEAM SECTION */
+    .aboutpg {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "The-Team"
+            "Dan"
+            "Hanna"
+            "teambottom";
+    }
+
+    .Dan {
+        grid-area: Dan;
+        justify-self: center;
+
+    }
+
+    .Dan img {
+        height: 100%;
+    }
+    
+    .Hanna {
+        margin-top: 50px;
+        grid-area: Hanna;
+        text-align: center;
+        justify-self: center;
+        margin-bottom: 100px;
+    }
+
+    .Hanna img {
+        height: 100%;
+    }
+    
+    .The-Team {
+        grid-area: The-Team;
+        text-align: center;
+        height: 100px;
+    }
+
+    .svgcontd {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 100% 50%;
+    }
+
+    .svgconth {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 100% 50%;
+    }
+    
+    .teambottom {
+        grid-area: teambottom;
+    }
+
+    .teamplant {
+        align-self: center;
+        height: 50px;
+    }
+
+    .smplant {
+        display: none;
+    }
+    /* END TEAM SECTION */
+    
+    /* CONTACT SECTION */
+    .contactform {
+        width: 70vw;
+        margin-left: 40px;
+    }
+
+    .contactform input {
+        width: 250px;
+    }
+
+    #contact {
+        height: 900px;
+        background-color: #b0c49c;
+    }
+
+    #contact h2 {
+        margin-top: -420px;
+        font-size: 16px;
+    }
+    .coffeepot{
+        display: none;
+    }
+
+    .contactimg{
+        margin-top: 450px;
+        margin-right: 100px;
+    }
+
+    .sittingppl{
+        width: 100%;
+        height: 100%;
+        margin-left: 100px;
+        margin-bottom: 0;
+    }
+
+    #message{
+        width: 250px;
+    }
+    /* END CONTACT SECTION */
+
+    /* THANK YOU PAGE */
     .thankyou {
         display: flex; 
         flex-wrap: wrap;
@@ -1084,4 +1105,5 @@ input {
         margin-top: 10px;
         width: 400px;
     }
+    /* END THANK YOU PAGE */
 }
