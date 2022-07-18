@@ -582,6 +582,11 @@ input {
             ". Text ."
             ". Photo ."
     }
+
+    .contactform{
+        margin-top: 30%;
+    }
+
     .Text{ 
         grid-area: Text;
         margin-top: -50px;
