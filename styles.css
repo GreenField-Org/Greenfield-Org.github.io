@@ -568,24 +568,28 @@ input {
 
 /* media queries for tablet*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    #home {
+        height: 730px;
+    }
     .container {
         display: inline-grid;
-        justify-content: center;
-        align-content: center;
+        justify-content:baseline;
+        align-content: baseline;
         font-family: arial;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px 10px;
+        grid-template-rows: 1fr 1fr 1fr ;
         grid-template-areas:
-            "Photo Text"
+            ". Text ."
+            ". Photo ."
     }
     .Text{ 
-        grid-area: text;
-        margin-top: -100px;
+        grid-area: Text;
+        margin-top: -50px;
+        justify-self: center;
         width: 90vw;
     }
     .Photo { 
-        grid-area: photo; 
+        grid-area: Photo; 
     }
 
     .devpage {  
