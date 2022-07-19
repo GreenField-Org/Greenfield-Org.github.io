@@ -641,6 +641,11 @@ input {
     #contact h2 {
         text-align: center;
     }
+    
+    .contactform {
+        margin-top: 30%;
+    }
+    /* END CONTACT SECTION */
 
     /* THANK YOU PAGE */
     .thankyou {
