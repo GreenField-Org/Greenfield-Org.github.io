@@ -1,17 +1,106 @@
 body {
     font-family: 'open sans';
-    width: 100vw;
+    width: 100%;
 }
 
-
-.topgreen {
-    width: 100vw;
+/* NAVIGATION */
+.menu {
+    display: block;
 }
 
-.botgreen {
-    width: 100vw;
+.logo {
+    height: 40px;
 }
 
+/* Add a black background color to the top navigation */
+.navbar {
+    height: 9vh;
+    background-color: #fff;
+    overflow: hidden;
+    font-family: 'open sans';
+    float: right;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    color: #5E8932;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #fff;
+    color: #5E8932;
+}
+
+.floatright{
+    float: right !important;
+    margin-top: 25px;
+}
+
+.side-menu {
+    display: none;
+}
+/* END NAVIGATION */
+
+/* HOME SECTION */
+.container {  
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: arial;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". Photo Text Text"
+}
+
+.Photo {
+    grid-area: Photo;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.homeimage {
+    height: 100%;
+}
+
+.Text {
+    grid-area: Text;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.Text h1 {
+    font-size: 25px;
+    width: 500px;
+}
+
+.Text p {
+    width: 500px;
+}
+/* END HOME SECTION */
+
+/* ABOUT SECTION */
 .devpage {  
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -23,6 +112,15 @@ body {
     width: 100vw;
 }
 
+.devtop { 
+    grid-area: 1 / 1 / 2 / 5; 
+    height: 31vh;
+    width: 100vw;
+    background-image: url('./img/topgreen.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 .devpage p {
     text-align: left;
 }
@@ -31,8 +129,6 @@ body {
     text-align: center;
 }
 
-
-  
 .devbot { 
   grid-area: 5 / 1 / 6 / 5; 
   height: 35vh;
@@ -45,17 +141,6 @@ body {
   
 .webdev { 
   grid-area: 2 / 1 / 3 / 5; 
-}
-  
-.devtop { 
-  grid-area: 1 / 1 / 2 / 5; 
-  height: 35vh;
-  width: 100vw;
-  background-image: url('./img/topgreen.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-
 }
 
 .webphoto {
@@ -84,245 +169,21 @@ body {
     justify-self: center;
 }
 
-
-.aboutbtn {
-    background-color: #5E8932;
-    color: #fff;
-    border-radius: 8px;
-    padding: 15px;
-    filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.4));
-    width: 250px;
-    font-family: arial;
-    cursor: pointer;
-    font-size: 15px;
+.greenwebdev {
+    height: 400px;
+    margin-left: 400px;
 }
 
-.emptydesk {
-    margin-left: 25vw;
-}
-
-#contact {
-    background-color: #b0c49c;
-    height: 89vh;
-    text-align: center;
-    width: 100vw;
-}
-
-#contact h2{
-    margin-top: -230px;
-    font-family: arial;
-}
-
-.footer {
-    background-color: #5E8932;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100vw;
-    height: 2vh;
-    font-family: 'open sans';
-    color: #fff;
-    font-weight: bold;
-    position: fixed;
-    bottom: 0;
-}
-
-.logo {
-    height: 40px;
-}
-
-.button {
-    background-color: #5E8932;
-    color: #fff;
-    border-radius: 8px;
-    padding: 15px;
-    filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.4));
-}
-
-.contactbtn {
-    background-color: #5E8932;
-    color: #fff;
-    border-radius: 8px;
-    padding: 15px;
-    width: 477px;
-    height: 88px;
-    filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.4));
-    font-size: 40px;
-    margin-top: 500px;
-    margin-left: 250px;
-    text-decoration: none;
-}
-
-.contactform {
-    background-color: #5E8932;
-    width: 500px;
-    height: 370px;
-    border-radius: 8px;
-    padding: 10px;
-    font-family: arial;
-    color: white;
-    transition-delay: 1s;
-    margin-left: 200px;
-    text-align: center;
-}
-
-input {
-    width: 300px;
-    background-color: #b0c49c;
-    border: 1px solid black;
-    margin: 5px;
-}
-
-.submit {
-    background-color: #b0c49c;
-    height: 30px;
-    border-radius: 8px;
-    width: 150px;
-    margin-top: 10px;
-    border: 1px solid black;
-}
-
-#message {
-    height: 150px;
-    background-color: #b0c49c;
-    width: 300px;
-    border: 1px solid black;
-    font-family: arial;
-    resize: none;
-}
-
-.contactbtn:hover {
-    display: none;
-}
-
-.contactimg {
+.greenwebapp {
     float: right;
-    margin-top: -100px;
+    margin-top: 150px;
+    margin-right: 100px;
 }
 
-.menu {
-    display: block;
-}
-
-/*.menu li {
-    float: left;
-}*/
-
-/* Add a black background color to the top navigation */
-.navbar {
-    height: 9vh;
-    background-color: #fff;
-    overflow: hidden;
-    font-family: 'open sans';
-    float: right;
-}
-
-/* Style the links inside the navigation bar */
-.navbar a {
-    color: #000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.navbar li {
-    display: inline;
-}
-
-.navbar ul {
-    list-style: none;
-}
-
-
-/* Change the color of links on hover */
-.navbar a:hover {
-    color: #5E8932;
-}
-
-/* Add a color to the active/current link */
-.navbar a.active {
-    background-color: #fff;
-    color: #5E8932;
-}
-
-  .floatright{
-    float: right !important;
-    margin-top: 25px;
-  }
-
-  /*home page grid */
-  #home{
-    height: 89vh;
-  }
-.container {  
-
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    font-family: arial;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 0px 0px;
-    grid-template-areas:
-        "Photo Text Text"
-}
-
-.Photo {
-    grid-area: Photo;
-    justify-content: center;
-    align-content: center;
-}
-
-.side-menu {
-    display: none;
-}
-
-.smplant {
-    height: 100px;
-    margin-left: 40vw;
-    margin-top: -90px;
-}
-
-.svgcontd {
-    background: url(./img/dangreen.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.svgconth {
-    background-image: url(./img/hannagreen.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-
-  .Text { 
-    grid-area: Text;
-    align-items:center;
-  }
-.homeimage {
-    height: 600px;
-}
-
-.teamplant {
-    height: 500px;
-    margin-bottom: -100px;
-}
-
-.teamtop {
-    text-align: center;
-}
-
-.Text {
-    grid-area: Text;
-    align-items: center;
-    text-align: center;
-    margin-top: 25vh;
-}
-
-.Text h1 {
-    font-size: 25px;
+.webappwords {
+    width: 300px;
+    margin-top: -250px;
+    line-height: 25px;
 }
 
 .webdevwords {
@@ -352,68 +213,48 @@ input {
     height: 500px;
 }
 
-.greenwebdev {
-    height: 400px;
-    margin-left: 400px;
+/*animation on scroll*/
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+  
+.reveal.active {
+    opacity: 1;
 }
 
-
-.greenwebapp {
-    float: right;
-    margin-top: 150px;
-    margin-right: 100px;
+.active.fade-left {
+    animation: fade-left 1s ease-in;
 }
 
-.webappwords {
-    width: 300px;
-    margin-top: -250px;
-    line-height: 25px;
+.active.fade-right {
+    animation: fade-right 1s ease-in;
 }
 
-#team {
-    height: 89vh;
+@keyframes fade-left {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
-.aboutpg a {
-    text-decoration: none;
-    font-size: 15px;
+@keyframes fade-right {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
+/* END ABOUT SECTION */
 
-.aboutpg {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "The-Team The-Team The-Team"
-        "Dan . Hanna"
-        "teambottom teambottom teambottom";
-}
-
-.Dan {
-    grid-area: Dan;
-    text-align: center;
-    justify-self: end;
-}
-
-.Hanna {
-    grid-area: Hanna;
-    text-align: center;
-    justify-self: start;
-}
-
-.The-Team {
-    grid-area: The-Team;
-    text-align: center;
-    height: 100px;
-}
-
-.teambottom {
-    grid-area: teambottom;
-    margin-top: -100px;
-}
-
+/* PROJECT SECTION */
 .projects{
     height: 89vh;
     width: 100vw;
@@ -446,9 +287,7 @@ input {
 .placeholder{
     width: 300px;
     height: 300px;
-    background-color: #b0c49c;
 }
-
 .placeholder:hover{
     width: 500px;
     display: none;
@@ -499,7 +338,177 @@ input {
     grid-area: projbot;
     margin-top: -80px;
 }
+/* END PROJECT SECTION */
 
+/* TEAM SECTION */
+.aboutbtn {
+    background-color: #5E8932;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.4));
+    width: 250px;
+    font-family: arial;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.smplant {
+    height: 100px;
+    margin-left: 40vw;
+    margin-top: -90px;
+}
+
+.aboutpg a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.aboutpg {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "The-Team The-Team The-Team"
+        "Dan . Hanna"
+        "teambottom teambottom teambottom";
+}
+
+.Dan {
+    grid-area: Dan;
+    text-align: center;
+    justify-self: end;
+}
+
+.Hanna {
+    grid-area: Hanna;
+    text-align: center;
+    justify-self: start;
+}
+
+.The-Team {
+    grid-area: The-Team;
+    text-align: center;
+    height: 100px;
+}
+
+.teambottom {
+    grid-area: teambottom;
+    margin-top: -100px;
+}
+
+.svgcontd {
+    background: url(./img/dangreen.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.svgconth {
+    background-image: url(./img/hannagreen.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* END TEAM SECTION */
+
+/* CONTACT SECTION */
+#contact {
+    background-color: #b0c49c;
+    height: 89vh;
+    text-align: center;
+    width: 100vw;
+}
+
+#contact h1 {
+    padding-top: 70px;
+}
+
+#contact h2{
+    margin-top: -230px;
+    padding-left: 150px;
+    font-family: arial;
+}
+.contactbtn {
+    background-color: #5E8932;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    width: 477px;
+    height: 88px;
+    filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.4));
+    font-size: 40px;
+    margin-top: 500px;
+    margin-left: 250px;
+    text-decoration: none;
+}
+
+.contactform {
+    background-color: #5E8932;
+    width: 500px;
+    height: 370px;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: arial;
+    color: white;
+    transition-delay: 1s;
+    margin-left: 200px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+input {
+    width: 300px;
+    background-color: #b0c49c;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.submit {
+    background-color: #b0c49c;
+    height: 30px;
+    border-radius: 8px;
+    width: 150px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+#message {
+    height: 150px;
+    background-color: #b0c49c;
+    width: 300px;
+    border: 1px solid black;
+    font-family: arial;
+    resize: none;
+}
+
+.contactbtn:hover {
+    display: none;
+}
+
+.contactimg {
+    float: right;
+    margin-top: -100px;
+}
+/* END CONTACT SECTION */
+
+/* FOOTER */
+.footer {
+    background-color: #5E8932;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100vw;
+    height: 2vh;
+    font-family: 'open sans';
+    color: #fff;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+}
+/* END FOOTER */
+
+/* THANK YOU PAGE */
 .thankyou {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -523,80 +532,45 @@ input {
     float: right;
     font-family: arial;
 }
-
-
-
-/*animation on scroll*/
-.reveal {
-    position: relative;
-    opacity: 0;
-  }
-  
-  .reveal.active {
-    opacity: 1;
-  }
-
-  .active.fade-left {
-    animation: fade-left 1s ease-in;
-  }
-
-  .active.fade-right {
-    animation: fade-right 1s ease-in;
-  }
-
-  @keyframes fade-left {
-    0% {
-      transform: translateX(-300px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes fade-right {
-    0% {
-      transform: translateX(300px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
+/* END THANK YOU PAGE */
 
 /* media queries for tablet*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    #home {
-        height: 730px;
-    }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* HOME SECTION */
     .container {
         display: inline-grid;
         justify-content:baseline;
         align-content: baseline;
         font-family: arial;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0 0;
         grid-template-areas:
-            ". Text ."
-            ". Photo ."
+            "Photo Text Text"
     }
 
-    .contactform{
-        margin-top: 30%;
-    }
-
-    .Text{ 
+    .Text { 
         grid-area: Text;
-        margin-top: -50px;
-        justify-self: center;
-        width: 90vw;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
     }
+
+    .Text h1 {
+        width: auto;
+    }
+
+    .Text p {
+        width: auto;
+    }
+
     .Photo { 
         grid-area: Photo; 
+        width: auto;
     }
+    /* END HOME SECTION */
 
+    /* DEV SECTION */
     .devpage {  
         display: inline-grid;
         grid-template-columns: repeat(3, 1fr);
@@ -607,6 +581,7 @@ input {
         align-items: center;
         width: 100vw;
     }
+
     .devtop {
         background-image: url('./img/topgreen.svg');
         background-repeat: no-repeat;
@@ -614,14 +589,17 @@ input {
         overflow: hidden;
         grid-area: 1 / 1 / 1 / 1;
     }
+
     .webdev { 
         grid-area: 3 / 1 / 3 / 1; 
         justify-self: center;
     }
+
     .webphoto {
         grid-area: 2 / 1 / 2 / 1;
         justify-content: center;
     }
+
     .appphoto {
         grid-area: 4 / 1 / 4 / 1;
         justify-self: center;
@@ -631,16 +609,20 @@ input {
         grid-area: 5 / 1 / 5 / 1;
         justify-self: center;
     }
+    
     .mobiledev {
         grid-area: 7 / 1 / 7 / 1;
     }
+    
     .mobilephoto {
         grid-area: 6 / 1 / 6 / 1;
         justify-self: center;
     }
+    
     .devbot {
         grid-area: 8 / 1 / 8 / 3;
     }
+    
     .contactimg {
         margin-top: 300px;
         margin-right: 250px;
@@ -649,7 +631,23 @@ input {
     .contactimg img {
         display: none;
     }
+    /* END DEV SECTION */
 
+    /* CONTACT SECTION */
+    .contactform {
+        margin: 50px 100px;
+    }
+
+    #contact h2 {
+        text-align: center;
+    }
+    
+    .contactform {
+        margin-top: 30%;
+    }
+    /* END CONTACT SECTION */
+
+    /* THANK YOU PAGE */
     .thankyou {
         display: flex; 
         flex-wrap: wrap;
@@ -658,7 +656,7 @@ input {
         grid-template-areas: 
           "thankyoutext"
           "thankyouimage"; 
-      }
+    }
 
     .thankyoutext{
         width: 300px;
@@ -668,89 +666,18 @@ input {
     .thankyouimage{
         margin-top: 10px;
     }
+    /* END THANK YOU PAGE */
 }
 
 /*media querie for phone*/
 @media screen and (max-width: 767px) {
-    .aboutpg {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "The-Team"
-            "Dan"
-            "Hanna"
-            "teambottom";
-    }
-
-    .Dan {
-        grid-area: Dan;
-        justify-self: center;
-
-    }
-
-    .Dan img{
-        height: 450px;
-    }
-    
-    .Hanna {
-        margin-top: 50px;
-        grid-area: Hanna;
-        text-align: center;
-        justify-self: center;
-        margin-bottom: 100px;
-    }
-
-    .Hanna img{
-        height: 450px;
-    }
-    
-    .The-Team {
-        grid-area: The-Team;
-        text-align: center;
-        height: 100px;
-    }
-
-    .svgcontd{
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 100% 50%;
-    }
-
-    .emptydesk{
-        display: none;
-    }
-
-    .svgconth{
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 100% 50%;
-    }
-
-    #team {
-        height: 1200px;
-    }
-    
-    .teambottom {
-        grid-area: teambottom;
-    }
-
-    .teamplant{
-        align-self: center;
-        height: 50px;
-    }
-
-    .smplant{
-        display: none;
-    }
-
+    /* NAVIGATION */
     .header{
         position: sticky;
         top: 0;
         width: 100%;
         z-index: 9;
+        background-color: #fff;
     }
 
     .logo {
@@ -829,90 +756,148 @@ input {
         transform: rotate(45deg);
         top:0;
     }
+    /* END NAVIGATION */
 
-    #home{
-        width: 100vw;
-    }
-
-    .contactform {
-        width: 70vw;
-        margin-left: 40px;
-
-    }
-
-    .contactform input{
-        width: 250px;
-    }
-
-    #contact {
-        height: 700px;
-    }
-
-    #contact h2{
-        margin-top: -420px;
-        font-size: 16px;
-    }
-    .coffeepot{
-        display: none;
-    }
-
-    .contactimg{
-        margin-top: 450px;
-        margin-right: 100px;
-    }
-
-    .sittingppl{
-        height: 200px;
-        margin-left: -150px;
-        margin-bottom: 0;
-    }
-
-    #message{
-        width: 250px;
-    }
+    /* HOME SECTION */
     .container {
-        height: 89vh;
-        width: 100vw;
         display: grid;
-        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
         grid-template-rows: auto auto auto;
         grid-template-areas:
-            "text text"
-            "text text"
-            "photo photo"
-      }
-    .homeimage{
-        width: 350px;
-        height: 350px;
+            "text"
+            "text"
+            "photo"
     }
       
-      .Text{ 
-          grid-area: text;
-          margin-top: -100px;
-          width: 95vw;
-        }
+    .Text{ 
+        grid-area: text;
+        width: 95vw;
+        align-items: center;
+    }
+
+    .Text h1 {
+        margin: 10px 50px;
+        width: 95%;
+    }
+
+    .Text p {
+        margin: 10px 50px;
+        width: 95%;
+    }
       
     .Photo { 
         grid-area: photo; 
-    }
-      
-    .text{ 
-          grid-area: text;
-          width: 100vw;
-    }
-      
-    .photo { 
-          grid-area: photo;
-          width: 100px;
+        width: 100%;
     }
 
-    .aboutpg{
-        grid-template-areas:
-        'The Team'
-        'Dan'
-        'Hanna'
+    .Photo img {
+        width: 100%;
+        height: 100%;  
+    }
+    /* END HOME SECTION */
+
+    /* ABOUT SECTION */
+    .devpage {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 0px 0px;
+        font-family: 'arial';
+        align-items: center;
+        width: 90vw;
     }
 
+    .devtop {
+        background-image: url('./img/topgreen.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+        grid-area: 1 / 1 / 1 / 1;
+    }
+
+    .webdev { 
+        grid-area: 3 / 1 / 3 / 1; 
+        justify-self: start;
+    }
+
+    .greenwebdev {
+        width: 70%;
+        height: 70%;
+        margin-left: 50px;
+    }
+
+    .webdevwords {
+        text-align: center;
+        width: 300px;
+        line-height: 25px;
+        margin-left: 50px;
+    }
+
+    .webphoto {
+        grid-area: 2 / 1 / 2 / 1;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .webphoto img {
+        width: 100%;
+    }
+    
+    .appphoto {
+        grid-area: 4 / 1 / 4 / 1;
+        justify-self: center;
+    }
+    
+    .appphoto img {
+        width: 100%;
+    }
+
+    .webapp {
+        grid-area: 5 / 1 / 5 / 1;
+        justify-self: center;
+    }
+
+    .webappwords {
+        text-align: center;
+        width: 300px;
+        line-height: 25px;
+        margin-left: 0;
+    }
+
+    .mobiledev {
+        grid-area: 7 / 1 / 7 / 1;
+    }
+    
+    .mobilephoto {
+        grid-area: 6 / 1 / 6 / 1;
+        justify-self: center;
+    }
+    
+    .mobilephoto img {
+        width: 100%;
+    }
+
+    .mobilewords {
+        width: 300px;
+        margin-top: -250px;
+        line-height: 25px;
+        margin-left: 50px;
+    }
+    
+    .mobilegreen {
+        width: 70%;
+        height: 70%;
+        margin-left: 50px;
+    }
+
+    .devbot {
+        grid-area: 8 / 1 / 8 / 3;
+    }
+    /* END DEV SECTION */
+
+    /* PROJECT SECTION */
     .projectpg {  display: grid;
         grid-template-columns: auto ;
         grid-template-rows: auto auto auto auto auto auto;
@@ -935,12 +920,12 @@ input {
           height: 100px; 
       }
       
-      .placeholder{
+      .placeholder {
           width: 300px;
           height: 300px;
       }
       
-      .projinfo{
+      .projinfo {
           text-align: center;
           font-family: arial;
           width: 320px;
@@ -949,7 +934,7 @@ input {
           height: 300px;
       }
 
-      .projinfo p{
+      .projinfo p {
           margin-top: -20px;
       }
 
@@ -979,7 +964,8 @@ input {
         justify-self: center;
      }
     
-    .proj6 { grid-area: proj6;
+    .proj6 { 
+        grid-area: proj6;
         justify-self: center;
     }
     
@@ -988,11 +974,122 @@ input {
         margin-top: -80px;
     }
 
-    .projppl{
+    .projppl {
         width: 350px;
         margin-left: 35px;
     }
+    /* END PROJECT SECTION */
 
+    /* TEAM SECTION */
+    .aboutpg {
+        height: fit-content;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "The-Team"
+            "Dan"
+            "Hanna"
+            "teambottom";
+    }
+
+    .Dan {
+        grid-area: Dan;
+        justify-self: center;
+
+    }
+
+    .Dan img {
+        height: 100%;
+    }
+    
+    .Hanna {
+        margin-top: 50px;
+        grid-area: Hanna;
+        text-align: center;
+        justify-self: center;
+        margin-bottom: 100px;
+    }
+
+    .Hanna img {
+        height: 100%;
+    }
+    
+    .The-Team {
+        grid-area: The-Team;
+        text-align: center;
+        height: 100px;
+    }
+
+    .svgcontd {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 100% 50%;
+    }
+
+    .svgconth {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 100% 50%;
+    }
+    
+    .teambottom {
+        grid-area: teambottom;
+    }
+
+    .teamplant {
+        align-self: center;
+        height: 50px;
+    }
+
+    .smplant {
+        display: none;
+    }
+    /* END TEAM SECTION */
+    
+    /* CONTACT SECTION */
+    .contactform {
+        width: 70vw;
+        margin-left: 40px;
+    }
+
+    .contactform input {
+        width: 250px;
+    }
+
+    #contact {
+        height: 900px;
+        background-color: #b0c49c;
+    }
+
+    #contact h2 {
+        margin-top: -420px;
+        font-size: 16px;
+    }
+    .coffeepot{
+        display: none;
+    }
+
+    .contactimg{
+        margin-top: 450px;
+        margin-right: 100px;
+    }
+
+    .sittingppl{
+        width: 100%;
+        height: 100%;
+        margin-left: 100px;
+        margin-bottom: 0;
+    }
+
+    #message{
+        width: 250px;
+    }
+    /* END CONTACT SECTION */
+
+    /* THANK YOU PAGE */
     .thankyou {
         display: flex; 
         flex-wrap: wrap;
@@ -1013,4 +1110,5 @@ input {
         margin-top: 10px;
         width: 400px;
     }
+    /* END THANK YOU PAGE */
 }
