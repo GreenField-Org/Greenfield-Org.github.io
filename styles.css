@@ -114,11 +114,11 @@ body {
 
 .devtop { 
     grid-area: 1 / 1 / 2 / 5; 
-    height: 31vh;
+    height: 40vh;
     width: 100vw;
     background-image: url('./img/topgreen.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 
 .devpage p {
