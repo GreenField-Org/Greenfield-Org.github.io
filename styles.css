@@ -19,6 +19,7 @@ body {
     overflow: hidden;
     font-family: 'open sans';
     float: right;
+    margin-right: 10px;
 }
 
 /* Style the links inside the navigation bar */
@@ -109,13 +110,13 @@ body {
     grid-auto-flow: row;
     font-family: 'arial';
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .devtop { 
     grid-area: 1 / 1 / 2 / 5; 
     height: 40vh;
-    width: 100vw;
+    width: 100%;
     background-image: url('./img/topgreen.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -132,7 +133,7 @@ body {
 .devbot { 
   grid-area: 5 / 1 / 6 / 5; 
   height: 35vh;
-  width: 100vw;
+  width: 100%;
   background-image: url('./img/botgreen.svg');
   background-repeat: no-repeat;
   background-size:100% 100%;
@@ -257,7 +258,7 @@ body {
 /* PROJECT SECTION */
 .projects{
     height: 89vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .projppl{
@@ -417,7 +418,7 @@ body {
     background-color: #b0c49c;
     height: 89vh;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 
 #contact h1 {
@@ -498,7 +499,7 @@ input {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 100vw;
+    width: 100%;
     height: 2vh;
     font-family: 'open sans';
     color: #fff;
@@ -535,7 +536,7 @@ input {
 /* END THANK YOU PAGE */
 
 /* media queries for tablet*/
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     /* HOME SECTION */
     .container {
         display: inline-grid;
@@ -579,7 +580,7 @@ input {
         grid-auto-flow: row;
         font-family: 'arial';
         align-items: center;
-        width: 100vw;
+        width: 100%;
     }
 
     .devtop {
@@ -587,11 +588,11 @@ input {
         background-repeat: no-repeat;
         background-size: contain;
         overflow: hidden;
-        grid-area: 1 / 1 / 1 / 1;
+        grid-area: 1 / 1 / 1 / 4;
     }
 
     .webdev { 
-        grid-area: 3 / 1 / 3 / 1; 
+        grid-area: 3 / 1 / 3 / 2; 
         justify-self: center;
     }
 
@@ -601,7 +602,7 @@ input {
     }
 
     .appphoto {
-        grid-area: 4 / 1 / 4 / 1;
+        grid-area: 4 / 1 / 4 / 2;
         justify-self: center;
     }
     
@@ -615,12 +616,12 @@ input {
     }
     
     .mobilephoto {
-        grid-area: 6 / 1 / 6 / 1;
+        grid-area: 6 / 1 / 6 / 2;
         justify-self: center;
     }
     
     .devbot {
-        grid-area: 8 / 1 / 8 / 3;
+        grid-area: 8 / 1 / 8 / 4;
     }
     
     .contactimg {
@@ -633,17 +634,95 @@ input {
     }
     /* END DEV SECTION */
 
+    /* PROJECT SECTION */
+    .projectpg {  display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "projtop"
+          "proj1"
+          "proj2" 
+          "proj3"
+          "proj4"
+          "proj5"
+          "proj6"
+          "projbot";
+    }
+      
+    .projtop { 
+        grid-area: projtop;
+        text-align: center;
+        height: 100px; 
+    }
+    
+    .placeholder {
+        width: 300px;
+        height: 300px;
+    }
+      
+    .projinfo {
+        text-align: center;
+        font-family: arial;
+        width: 320px;
+        display: block;
+        color: black;
+        height: 300px;
+    }
+
+    .projinfo p {
+        margin-top: -20px;
+    }
+    
+    .proj1 { 
+        grid-area: proj1;
+        justify-self: center;
+    }
+    
+    .proj2 { 
+        grid-area: proj2;
+        justify-self: center;
+     }
+    
+    .proj3 { 
+        grid-area: proj3;
+        justify-self: center;   
+     }
+    
+    .proj4 { 
+        grid-area: proj4;
+        justify-self: center;
+     }
+    
+    .proj5 { 
+        grid-area: proj5;
+        justify-self: center;
+     }
+    
+    .proj6 { 
+        grid-area: proj6;
+        justify-self: center;
+    }
+    
+    .projbot { 
+        grid-area: projbot;
+        margin-top: -80px;
+    }
+
+    .projppl {
+        width: 350px;
+        margin-left: 35px;
+    }
+    /* END PROJECT SECTION */
+
     /* CONTACT SECTION */
     .contactform {
-        margin: 50px 100px;
+        margin: 0 auto;
     }
 
     #contact h2 {
         text-align: center;
-    }
-    
-    .contactform {
-        margin-top: 30%;
     }
     /* END CONTACT SECTION */
 
@@ -912,32 +991,31 @@ input {
           "proj5"
           "proj6"
           "projbot";
-      }
+    }
       
-      .projtop { 
-          grid-area: projtop;
-          text-align: center;
-          height: 100px; 
-      }
+    .projtop { 
+        grid-area: projtop;
+        text-align: center;
+        height: 100px; 
+    }
+    
+    .placeholder {
+        width: 300px;
+        height: 300px;
+    }
       
-      .placeholder {
-          width: 300px;
-          height: 300px;
-      }
-      
-      .projinfo {
-          text-align: center;
-          font-family: arial;
-          width: 320px;
-          display: block;
-          color: black;
-          height: 300px;
-      }
+    .projinfo {
+        text-align: center;
+        font-family: arial;
+        width: 320px;
+        display: block;
+        color: black;
+        height: 300px;
+    }
 
-      .projinfo p {
-          margin-top: -20px;
-      }
-
+    .projinfo p {
+        margin-top: -20px;
+    }
     
     .proj1 { 
         grid-area: proj1;
