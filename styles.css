@@ -977,6 +977,10 @@ input {
   .devbot {
     grid-area: 8 / 1 / 8 / 3;
   }
+
+  .bottomWave {
+    margin-top: 5rem;
+  }
   /* END DEV SECTION */
 
   /* PROJECT SECTION */
