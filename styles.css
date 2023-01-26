@@ -230,6 +230,10 @@ body {
   animation: fade-right 1s ease-in;
 }
 
+.bottomWave {
+  transform: rotate(180deg);
+}
+
 @keyframes fade-left {
   0% {
     transform: translateX(-300px);
