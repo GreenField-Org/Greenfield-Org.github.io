@@ -36,6 +36,19 @@
 
             window.addEventListener("scroll", reveal);
       </script>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                gfPrimary: '#5e8932',
+              }
+            }
+          }
+        }
+      </script>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     </head>
     <body>
         <header class="header">
