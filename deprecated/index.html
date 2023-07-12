@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GreenField Development</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="Mobile development, Wordpress development, Greenfield, Greenfield Development, freelance, web development, web application, software engineering, responsive design">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <script>
+          function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+                } else {
+                reveals[i].classList.remove("active");
+                }
+            }
+            }
+
+            window.addEventListener("scroll", reveal);
+      </script>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                gfPrimary: '#5e8932',
+              }
+            }
+          }
+        }
+      </script>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#home"><img class="logo" src="./img/logo.PNG" alt="greenfield org logo"></a>
+
+            <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+            <nav class="navbar">
+                <ul id="floatright" class="menu">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="Photo">
+                <img class="homeimage" src="img/homepage.PNG">
+            </div>
+            <div class="Text">
+                <h1>Building software solutions to fit your needs</h1>
+                <p>We are a team of Software Engineers and Web Developers who will work with you to solve your companies needs with the technologies which best fit your requirements.</p>
+            </div>
+        </div>
+
+        <svg viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <style type="text/css">
+                .wave {
+                  animation: wave 8s linear infinite;
+                }
+          
+                .wave1 {
+                  animation: wave1 10s linear infinite;
+                }
+          
+                .wave2 {
+                  animation: wave2 12s linear infinite;
+                }
+          
+                @keyframes wave {
+                  0% {
+                    transform: translateX(0%);
+                  }
+          
+                  100% {
+                    transform: translateX(100%);
+                  }
+                }
+          
+                @keyframes wave1 {
+                  0% {
+                    transform: scaleY(1.2) translateX(0%);
+                  }
+          
+                  100% {
+                    transform: scaleY(1.2) translateX(100%);
+                  }
+                }
+          
+                @keyframes wave2 {
+                  0% {
+                    transform: scaleY(.8) translateX(0%);
+                  }
+          
+                  100% {
+                    transform: scaleY(.8) translateX(100%);
+                  }
+                }
+              </style>
+              <path id='sineWave' fill="#5e8932" fill-opacity="0.2" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+            </defs>
+            <use class="wave" href="#sineWave" />
+            <use class="wave" x="-100%" href="#sineWave" />
+            <use class="wave1" href="#sineWave" />
+            <use class="wave1" x="-100%" href="#sineWave" />
+            <use class="wave2" href="#sineWave" />
+            <use class="wave2" x="-100%" href="#sineWave" />
+          </svg>
+         <!-- DEV PAGE -->
+         <div class="devpage">
+            <div class="devtop" hidden></div>
+            <div class="webdev">
+                <img class="greenwebdev reveal fade-left" src="./img/webdevgreen.svg">
+                <div class="webdevwords reveal fade-left">
+                    <h2>Website Development</h2>
+                    <p>We are a completely tech agnostic team passionate about learning technologies.  We will work with you to determine the right stack solution which best fits.</p>
+                </div>
+            </div>
+            <div class="webphoto">
+                <img class="devimg" src="./img/webdev.svg">
+            </div>
+            <div class="appphoto">
+                <img class="devimg" src="./img/webapp.svg">
+            </div>
+            <div class="webapp">
+                <img class="reveal fade-right" src="./img/webappgreen.svg">
+                <div class="webappwords reveal fade-right">
+                    <h2>Website Applications</h2>
+                    <p>We will listen to your needs and together will put together the best solution. We take pride in our abilities to embrace the unknown and work tirelessly to meet your needs.</p>
+                </div>
+            </div>
+            <div class="mobiledev">
+                <img class="mobilegreen reveal fade-left" src="./img/mobilegreen.svg">
+                <div class="mobilewords reveal fade-left">
+                    <h2>Mobile Development</h2>
+                    <p>Looking for a mobile app?  We provide solutions across all major platforms and are willing to work with your team to deterine what will work best for you.</p>
+                </div>
+            </div>
+            <div class="mobilephoto">
+                <img class="devimg" src="./img/mobile.svg">
+            </div>
+            <div class="devbot" hidden></div>
+          </div>
+          <div class="bottomWave">
+            <svg viewbox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <style type="text/css">
+                    .wave {
+                      animation: wave 8s linear infinite;
+                    }
+              
+                    .wave1 {
+                      animation: wave1 10s linear infinite;
+                    }
+              
+                    .wave2 {
+                      animation: wave2 12s linear infinite;
+                    }
+              
+                    @keyframes wave {
+                      0% {
+                        transform: translateX(0%);
+                      }
+              
+                      100% {
+                        transform: translateX(100%);
+                      }
+                    }
+              
+                    @keyframes wave1 {
+                      0% {
+                        transform: scaleY(1.2) translateX(0%);
+                      }
+              
+                      100% {
+                        transform: scaleY(1.2) translateX(100%);
+                      }
+                    }
+              
+                    @keyframes wave2 {
+                      0% {
+                        transform: scaleY(.8) translateX(0%);
+                      }
+              
+                      100% {
+                        transform: scaleY(.8) translateX(100%);
+                      }
+                    }
+                  </style>
+                  <path id='sineWave' fill="#5e8932" fill-opacity="0.2" d="M0,160 C320,300,420,300,740,160 C1060,20,1120,20,1440,160 V0 H0" />
+                </defs>
+                <use class="wave" href="#sineWave" />
+                <use class="wave" x="-100%" href="#sineWave" />
+                <use class="wave1" href="#sineWave" />
+                <use class="wave1" x="-100%" href="#sineWave" />
+                <use class="wave2" href="#sineWave" />
+                <use class="wave2" x="-100%" href="#sineWave" />
+              </svg>
+          </div>
+        <!-- PROJECTS -->
+        <div id="projects">
+            <div class="projectpg">
+                <div class="projtop">
+                    <h1>Projects</h1>
+                </div>
+                <div class="proj1">
+                    <img class="placeholder" src="./img/GBPProj.PNG">
+                    <div class="projinfo">
+                        <h2>Gal's Best Pal</h2></br>
+                        <p>A custom Wordpress theme for a non-profit rescue organization. Greenfield handled both the administrative side of setting up the theme and plugins, as well as creating a seven page custom theme for the organization.</p>
+                        <a href="https://galsbestpal.com/" target="_blank" rel="noreferrer">Gal's Best Pal</a><br/>
+                    </div>
+                </div>
+                <div class="proj2">
+                    <img class="placeholder" src="./img/UltraCrewApp.PNG">
+                    <div class="projinfo">
+                        <h2>Ultra Crew App</h2></br>
+                        <p>A mobile application built in React Native that is used to track ultramarathon athletes during their races. This app uses an API layer to keep track of data, track calories, and overall race results. A link to download will be added once the MVP is fully completed.</p>
+                    </div>
+                </div>
+                <div class="proj3">
+                    <img class="placeholder" src="./img/LBXProj.png">
+                    <div class="projinfo">
+                        <h2>Lean Biologix</h2></br>
+                        <p>A custom Wordpress site built with Divi. GreenField handled the administrative side, worked on design, and created an extensive custom theme for the organization.</p>
+                        <a href="https://www.leanbiologix.com/" target="_blank" rel="noreferrer">Lean Biologix</a><br/>
+                    </div>
+                </div>
+                <div class="proj4">
+                    <img class="placeholder" src="./img/patience.jpg">
+                    <div class="projinfo">
+                        <h2>Project Name</h2></br>
+                        <p>Project info and tech stack and all that Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio esse saepe! Mollitia ratione similique ut quis, accusantium minus iure rerum voluptatibus quas quam harum excepturi aliquam corporis nostrum. Vel.</p>
+                        <a href="#" target="_blank" rel="noreferrer">Link</a><br/>
+                    </div>
+                </div>
+                <div class="proj5">
+                    <img class="placeholder" src="./img/patience.jpg">
+                    <div class="projinfo">
+                        <h2>Project Name</h2></br>
+                        <p>Project info and tech stack and all that Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio esse saepe! Mollitia ratione similique ut quis, accusantium minus iure rerum voluptatibus quas quam harum excepturi aliquam corporis nostrum. Vel.</p>
+                        <a href="#" target="_blank" rel="noreferrer">Link</a><br/>
+                    </div>
+                </div>
+                <div class="proj6">
+                    <img class="placeholder" src="./img/patience.jpg">
+                    <div class="projinfo">
+                        <h2>Project Name</h2></br>
+                        <p>Project info and tech stack and all that Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad distinctio esse saepe! Mollitia ratione similique ut quis, accusantium minus iure rerum voluptatibus quas quam harum excepturi aliquam corporis nostrum. Vel.</p>
+                        <a href="#" target="_blank" rel="noreferrer">Link</a><br/>
+                    </div>
+                </div>
+                <div class="projbot">
+                    <img class="projppl" src="./img/projppl.svg">
+                </div>
+              </div>
+        </div>
+         <!-- TEAM -->
+         <div id="team">
+            <div class="aboutpg">
+                <div class="The-Team">
+                    <h1>the Team</h1>
+                    <img src="./img/smplant.svg" class="smplant">
+                </div>
+                <div class="Dan">
+                    <div class="svgcontd">
+                        <img class="danphoto" src="./img/danpic.svg">
+                    </div>
+                    <h2>Daniel</h2>
+                    <button class="aboutbtn" onclick="window.open('https://greenervigil.github.io/', '_blank')">View Portfolio</a>
+                </div>
+                <div class="Hanna">
+                    <div class="svgconth">
+                        <img class="hannaphoto" src="./img/hannapic.svg">
+                    </div>
+                    <h2 >Hanna</h2>
+                    <button onclick="window.open('https://hannamlittlefield.github.io/', '_blank')" class="aboutbtn">View Portfolio</a>
+                </div>
+            </div>
+
+         </div> 
+        </div>
+        <div id="contact">
+            <div>
+                <h1>Contact Us</h1>
+                <div class="contactform">
+                    <form action="https://formsubmit.co/development.gf@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="https://greenfield-org.github.io/thankyou.html">
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" name="email"><br>
+                        <label for="Title">Title</label><br>
+                        <input type="text" id="title" name="title"><br>
+                        <label for="message">Message</label><br>
+                        <textarea type="text" id="message" name="message"></textarea><br>
+                        <button class="submit" type="submit" value="Submit">Send</button>
+                    </form>
+                </div>
+                <div class="contactimg">
+                    <h2>&#9993; development.gf@gmail.com</h2>
+                    <img class="coffeepot" src="./img/coffee.svg">
+                    <img class="sittingppl" src="/img/pplsitting.svg">
+                </div>
+            </div>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- footer -->
+        <footer class="footer">Made with ❤ by Greenfield Development - Copyright &copy; <script>document.write(new Date().getFullYear())</script></footer>
+        <script src="" async defer></script>
+    </body>
+</html>
