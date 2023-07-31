@@ -17,7 +17,7 @@ type Story = StoryObj<typeof meta>;
 
 export const TopWave: Story = {
   args: {
-    color: "green",
+    color: "#5e8932",
     direction: "top",
   },
 };
