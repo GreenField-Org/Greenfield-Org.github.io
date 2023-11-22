@@ -2,6 +2,7 @@ import Button from "@/components/button/button";
 import Card from "@/components/card/card";
 import Container from "@/components/container/container";
 import Cta from "@/components/cta/cta";
+import Image from "next/image";
 
 export default function About() {
   const team = [
@@ -78,6 +79,7 @@ export default function About() {
           <p className='self-stretch text-base not-italic font-bold leading-[150%]'>Trusted by industry leaders for exceptional software solutions</p>
           <div className='flex flex-col items-start gap-4 self-stretch pt-4'>
             {/* companies logos */}
+            <Image src={'/img/CMMechanical_logo.png'} height={150} width={150} alt="C&M Mecanical HVAC"/>
           </div>
         </div>
       </div>
