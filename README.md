@@ -1,16 +1,11 @@
 [![pages-build-deployment](https://github.com/GreenField-Org/Greenfield-Org.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/GreenField-Org/Greenfield-Org.github.io/actions/workflows/pages/pages-build-deployment)
 
 # GreenField
-The business page for GreenField Organization Software Development
 
-## Local Development
-Instructions are for live server and VSCode
-- run git clone of repo
-- Start live server
-- Live server will open a browser window in your default browser
-
+The business site for GreenField Organization Software Development
 
 ## Thigs We Do
+
 - Responsive Static Websites
 - Single Page Web Apps
 - Multi-Page Web Apps
@@ -18,6 +13,7 @@ Instructions are for live server and VSCode
 - Mobile Apps in React Native
 
 ## Our Experience
+
 - HTML
 - CSS
 - JavaScript
@@ -41,10 +37,6 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
