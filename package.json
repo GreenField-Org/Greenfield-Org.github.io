@@ -19,11 +19,15 @@
     "@types/node": "20.4.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "clsx": "^2.1.0",
     "eslint": "8.44.0",
     "eslint-config-next": "^14.0.1",
+    "framer-motion": "^11.0.8",
     "next": "^14.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "simplex-noise": "^4.0.1",
+    "tailwind-merge": "^2.2.1",
     "typescript": "5.1.6"
   },
   "devDependencies": {
