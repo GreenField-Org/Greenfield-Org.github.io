@@ -1,9 +1,9 @@
+import compressor from "astro-compressor";
 import { defineConfig } from "astro/config";
+import sitemap from "@astrojs/sitemap";
+import starlight from "@astrojs/starlight";
 import tailwind from "@astrojs/tailwind";
 import vercelStatic from "@astrojs/vercel/static";
-import sitemap from "@astrojs/sitemap";
-import compressor from "astro-compressor";
-import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,7 +12,7 @@ export default defineConfig({
   image: {
     domains: ["images.unsplash.com"],
   },
-  i18n: {
+  /*i18n: {
     defaultLocale: "en",
     locales: ["en", "fr"],
     fallback: {
@@ -21,7 +21,7 @@ export default defineConfig({
     routing: {
       prefixDefaultLocale: false
     }
-  },
+  },*/
   prefetch: true,
   integrations: [
     tailwind(),
